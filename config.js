@@ -2,8 +2,8 @@
 // Qualquer chave abaixo pode ser usada nos textos como {{chave}}.
 window.QUIZ_CONFIG = {
   produto: 'Calistenia das 30+',     // nome da oferta (topo, textos, preço e resultado)
-  logo: '',                          // URL da logo; vazio = nome da oferta em texto
-  corTema: '#f59e0b',                // cor principal
+  logo: 'img/logo.webp',             // URL da logo; vazio = nome da oferta em texto
+  corTema: '#f97316',                // cor principal (laranja da logo)
 
   checkout: '',                      // link do checkout (Hotmart, Kiwify...). UTMs da página são repassadas.
   preco: 'R$ 47,00',

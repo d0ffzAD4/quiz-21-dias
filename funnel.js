@@ -217,7 +217,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">Treine em casa, <span style=\"color: rgb(245, 158, 11);\">só com o peso do seu corpo</span></h1><p class=\"ql-align-center\">A <strong>{{produto}}</strong> são <strong>desafios de 21 dias</strong> de calistenia feitos para mulheres depois dos 30: treinos simples, em casa e sem equipamento. 💪</p>",
+      "text": "<h1 class=\"ql-align-center\">Treine em casa, <span style=\"color: rgb(249, 115, 22);\">só com o peso do seu corpo</span></h1><p class=\"ql-align-center\">A <strong>{{produto}}</strong> são <strong>desafios de 21 dias</strong> de calistenia feitos para mulheres depois dos 30: treinos simples, em casa e sem equipamento. 💪</p>",
       "id": "ydb1ye",
       "name": "75GslY"
      }
@@ -282,7 +282,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">Você já experimentou <span style=\"color: rgb(245, 158, 11);\">treinos de calistenia</span> em casa antes?</h1>",
+      "text": "<h1 class=\"ql-align-center\">Você já experimentou <span style=\"color: rgb(249, 115, 22);\">treinos de calistenia</span> em casa antes?</h1>",
       "id": "cVUuH6",
       "name": "yi4IJs"
      }
@@ -370,7 +370,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">A calistenia é o treino com o peso do próprio corpo: fácil de começar e muito eficaz</h1><p class=\"ql-align-center\">Nos desafios de 21 dias da <strong style=\"color: rgb(245, 158, 11);\">{{produto}}</strong> você trabalha as principais áreas: <strong>braços, pernas, barriga e glúteos</strong>, sem nenhum equipamento, em casa.</p><p class=\"ql-align-center\">Com exercícios simples e adaptados para quem está começando!</p>",
+      "text": "<h1 class=\"ql-align-center\">A calistenia é o treino com o peso do próprio corpo: fácil de começar e muito eficaz</h1><p class=\"ql-align-center\">Nos desafios de 21 dias da <strong style=\"color: rgb(249, 115, 22);\">{{produto}}</strong> você trabalha as principais áreas: <strong>braços, pernas, barriga e glúteos</strong>, sem nenhum equipamento, em casa.</p><p class=\"ql-align-center\">Com exercícios simples e adaptados para quem está começando!</p>",
       "id": "i8BDTY",
       "name": "OIgmwv"
      }
@@ -476,7 +476,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><span style=\"color: rgb(9, 9, 11);\">Você está na</span><span style=\"color: rgb(220, 38, 38);\"> </span><span style=\"color: rgb(245, 158, 11);\">menopausa?</span></h1>",
+      "text": "<h1 class=\"ql-align-center\"><span style=\"color: rgb(9, 9, 11);\">Você está na</span><span style=\"color: rgb(220, 38, 38);\"> </span><span style=\"color: rgb(249, 115, 22);\">menopausa?</span></h1>",
       "id": "dy9KbU",
       "name": "AsIgeS"
      }
@@ -533,7 +533,7 @@ window.QUIZ_FUNNEL = {
       "verticalAlign": "self-start"
      },
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><strong style=\"color: rgb(9, 9, 11);\">Qual o seu</strong><strong style=\"color: rgb(220, 38, 38);\"> </strong><strong style=\"color: rgb(245, 158, 11);\">nome?</strong></h1>",
+      "text": "<h1 class=\"ql-align-center\"><strong style=\"color: rgb(9, 9, 11);\">Qual o seu</strong><strong style=\"color: rgb(220, 38, 38);\"> </strong><strong style=\"color: rgb(249, 115, 22);\">nome?</strong></h1>",
       "id": "8aC9gk",
       "name": "g9eDNl"
      }
@@ -595,7 +595,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><strong>{{nome}}, o que mais espera alcançar com a </strong><strong style=\"color: rgb(245, 158, 11);\">calistenia?</strong></h1><p class=\"ql-align-center\">escolha todos que se aplicam:</p>",
+      "text": "<h1 class=\"ql-align-center\"><strong>{{nome}}, o que mais espera alcançar com a </strong><strong style=\"color: rgb(249, 115, 22);\">calistenia?</strong></h1><p class=\"ql-align-center\">escolha todos que se aplicam:</p>",
       "id": "NyFhx8",
       "name": "c61HkN"
      }
@@ -1436,7 +1436,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><span style=\"color: rgb(9, 9, 11);\">Você já faz alguma </span><span style=\"color: rgb(245, 158, 11);\">atividade física? 🏃‍♀️</span></h1>",
+      "text": "<h1 class=\"ql-align-center\"><span style=\"color: rgb(9, 9, 11);\">Você já faz alguma </span><span style=\"color: rgb(249, 115, 22);\">atividade física? 🏃‍♀️</span></h1>",
       "id": "9vY5ch",
       "name": "QAgDW6"
      }
@@ -1748,7 +1748,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">A <span style=\"color: rgb(245, 158, 11);\">{{produto}}</span> vai ajudar você a <span style=\"color: rgb(245, 158, 11);\">recuperar massa muscular</span>, com mais firmeza e resistência no corpo</h1><p class=\"ql-align-center\">Em cada <strong>desafio de 21 dias</strong> você fortalece os músculos, acelera o metabolismo e tonifica o corpo inteiro, só com o peso do corpo.</p><p class=\"ql-align-center\">Queremos que você transforme seu corpo por completo!</p>",
+      "text": "<h1 class=\"ql-align-center\">A <span style=\"color: rgb(249, 115, 22);\">{{produto}}</span> vai ajudar você a <span style=\"color: rgb(249, 115, 22);\">recuperar massa muscular</span>, com mais firmeza e resistência no corpo</h1><p class=\"ql-align-center\">Em cada <strong>desafio de 21 dias</strong> você fortalece os músculos, acelera o metabolismo e tonifica o corpo inteiro, só com o peso do corpo.</p><p class=\"ql-align-center\">Queremos que você transforme seu corpo por completo!</p>",
       "id": "KI9gLh",
       "name": "Oo738I"
      }
@@ -3501,7 +3501,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">{{nome}}, o seu desafio de 21 dias da <span style=\"color: rgb(245, 158, 11);\">{{produto}}</span> está pronto!</h1>",
+      "text": "<h1 class=\"ql-align-center\">{{nome}}, o seu desafio de 21 dias da <span style=\"color: rgb(249, 115, 22);\">{{produto}}</span> está pronto!</h1>",
       "id": "GTHcoQ",
       "name": "Jcn3Uc"
      }
@@ -3652,7 +3652,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><strong>{{nome}}, o seu desafio de 21 dias da </strong><strong style=\"color: rgb(245, 158, 11);\">{{produto}}</strong><strong> está pronto!</strong></h1>",
+      "text": "<h1 class=\"ql-align-center\"><strong>{{nome}}, o seu desafio de 21 dias da </strong><strong style=\"color: rgb(249, 115, 22);\">{{produto}}</strong><strong> está pronto!</strong></h1>",
       "id": "ZQ32vu",
       "name": "0Vwzcf"
      }

@@ -16,7 +16,7 @@ img{max-width:100%;height:auto;display:block}
 .top-row{display:grid;grid-template-columns:32px 1fr 32px;align-items:start}
 .back{color:var(--title);width:32px;height:32px;display:flex;align-items:center;justify-content:center}
 .logo{display:flex;justify-content:center}
-.logo img{width:10rem;height:auto}
+.logo img{width:10rem;height:auto;aspect-ratio:auto 420/349}
 .logo-txt{font-weight:800;font-size:1.45rem;color:var(--title);letter-spacing:-.03em;text-align:center;line-height:1.1;padding:14px 0;white-space:nowrap}
 .logo-txt b{display:inline-block;margin-left:6px;padding:2px 10px;border-radius:10px;background:var(--theme);color:#fff;font-weight:800;transform:rotate(-3deg)}
 .progress{height:8px;border-radius:99px;background:color-mix(in srgb,var(--theme) 10%,#fff);margin-top:14px;overflow:hidden}
