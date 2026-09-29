@@ -18,7 +18,7 @@ window.QUIZ_CONFIG = {
   rodape: '',                        // texto pequeno no rodapé de todas as etapas; opcional
 
   // Imagens e vídeos: a chave é o id que aparece em quiz/IMAGENS.md
-  mostrarPlaceholders: true,         // false = esconde as caixas "Sua imagem aqui" sem imagem definida
+  mostrarPlaceholders: false,        // true = mostra as caixas "Sua imagem aqui" onde falta imagem
   imagens: {
     // 'sopjkw': 'https://.../35-45-anos.jpg',
   },
