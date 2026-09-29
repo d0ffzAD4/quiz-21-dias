@@ -1,4 +1,4 @@
-// Etapas do quiz (gerado a partir do zip; editável).
+// Etapas do quiz Calistenia das 30+ (editável).
 // Textos aceitam {{variaveis}} de config.js e respostas ({{nome}}, {{peso}}, {{altura}}...).
 window.QUIZ_FUNNEL = {
  "title": "{{produto}}",
@@ -106,7 +106,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">Plano de 21 dias pra deixar o corpo durinho e dar adeus à flacidez 💪</h1><p class=\"ql-align-center\"><strong style=\"color: rgb(9, 9, 11); background-color: rgb(250, 204, 21);\">DESAFIO ESPECÍFICO DE ACORDO COM A SUA FAIXA ETÁRIA</strong></p><p class=\"ql-align-center\">Escolha uma opção abaixo:</p>",
+      "text": "<h1 class=\"ql-align-center\">Desafio de 21 dias de calistenia pra deixar o corpo durinho e dar adeus à flacidez 💪</h1><p class=\"ql-align-center\"><strong style=\"color: rgb(9, 9, 11); background-color: rgb(250, 204, 21);\">DESAFIO ESPECÍFICO PARA A SUA FAIXA ETÁRIA</strong></p><p class=\"ql-align-center\">Escolha a sua idade:</p>",
       "id": "SjnCen",
       "name": "HuBQYh"
      }
@@ -132,42 +132,42 @@ window.QUIZ_FUNNEL = {
         "id": "sopjkw",
         "image": {
          "type": "image",
-         "src": "img/sopjkw.jpg",
-         "width": 640,
-         "height": 640
+         "src": "img/sopjkw.webp",
+         "width": 480,
+         "height": 480
         },
-        "label": "<p>Idade: 35-45 anos</p>",
+        "label": "<p>Idade: 30-39 anos</p>",
         "destination": "next"
        },
        {
         "id": "mcs1t7",
         "image": {
          "type": "image",
-         "src": "img/mcs1t7.jpg",
-         "width": 640,
-         "height": 640
+         "src": "img/mcs1t7.webp",
+         "width": 480,
+         "height": 480
         },
-        "label": "<p>Idade: 46-55 anos</p>",
+        "label": "<p>Idade: 40-49 anos</p>",
         "destination": "next"
        },
        {
         "id": "bXhpgg",
-        "label": "<p>Idade: 56-65 anos</p>",
+        "label": "<p>Idade: 50-59 anos</p>",
         "image": {
          "type": "image",
-         "src": "img/bXhpgg.jpg",
-         "width": 640,
-         "height": 640
+         "src": "img/bXhpgg.webp",
+         "width": 480,
+         "height": 480
         }
        },
        {
         "id": "GqJ7PA",
-        "label": "<p>Idade: 65+</p>",
+        "label": "<p>Idade: 60+ anos</p>",
         "image": {
          "type": "image",
-         "src": "img/GqJ7PA.jpg",
-         "width": 640,
-         "height": 640
+         "src": "img/GqJ7PA.webp",
+         "width": 480,
+         "height": 480
         }
        }
       ],
@@ -180,10 +180,27 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<p class=\"ql-align-center\"><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\">Ao clicar em alguma das opções, você concorda com os </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Termos de utilização e serviço,</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de privacidade,</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de subscrição</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> e </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de cookies</strong></p><p class=\"ql-align-center\"><span class=\"ql-size-small\" style=\"color: rgb(122, 122, 122); background-color: rgb(248, 247, 247);\">CNPJ: {{cnpj}}</span></p>",
+      "text": "<p class=\"ql-align-center\"><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\">Ao clicar em alguma das opções, você concorda com os </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Termos de utilização e serviço,</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de privacidade,</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de subscrição</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> e </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de cookies</strong></p>",
       "id": "GwlzIX",
       "name": "oXnMKE"
      }
+    },
+    {
+     "id": "cnpj01",
+     "type": "text",
+     "design": [],
+     "content": {
+      "text": "<p class=\"ql-align-center\"><span class=\"ql-size-small\" style=\"color: rgb(122, 122, 122);\">CNPJ: {{cnpj}}</span></p>"
+     },
+     "roles": [
+      [
+       {
+        "variable": "{{cnpj}}",
+        "compare": "!=",
+        "value": ""
+       }
+      ]
+     ]
     }
    ],
    "options": {
@@ -200,7 +217,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><span style=\"color: rgb(9, 9, 11);\">{{prova_social}}</span><span style=\"color: rgb(220, 38, 38);\"> </span><span style=\"color: rgb(245, 158, 11);\">mulheres</span></h1><p class=\"ql-align-center\">depois dos<strong> 40 anos</strong> já transformaram e tonificaram seus corpos com o nosso protocolo de treinos de <strong>Reativação Muscular em casa. 💪</strong></p>",
+      "text": "<h1 class=\"ql-align-center\">Treine em casa, <span style=\"color: rgb(245, 158, 11);\">só com o peso do seu corpo</span></h1><p class=\"ql-align-center\">A <strong>{{produto}}</strong> são <strong>desafios de 21 dias</strong> de calistenia feitos para mulheres depois dos 30: treinos simples, em casa e sem equipamento. 💪</p>",
       "id": "ydb1ye",
       "name": "75GslY"
      }
@@ -215,10 +232,9 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
-       "width": 605,
-       "height": 338
+       "src": "img/wJHclw.webp",
+       "width": 900,
+       "height": 506
       },
       "id": "Q3fpgC",
       "name": "SjNZHz"
@@ -266,7 +282,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><span style=\"color: rgb(9, 9, 11);\">Você já experimentou </span><span style=\"color: rgb(250, 204, 21);\">treinos de Reativação Muscular</span><span style=\"color: rgb(9, 9, 11);\"> em casa antes?</span></h1>",
+      "text": "<h1 class=\"ql-align-center\">Você já experimentou <span style=\"color: rgb(245, 158, 11);\">treinos de calistenia</span> em casa antes?</h1>",
       "id": "cVUuH6",
       "name": "yi4IJs"
      }
@@ -287,7 +303,7 @@ window.QUIZ_FUNNEL = {
         "id": "BxHL8u",
         "image": {
          "type": "image",
-         "src": "img/BxHL8u.jpg",
+         "src": "img/BxHL8u.webp",
          "width": 178,
          "height": 178
         },
@@ -298,7 +314,7 @@ window.QUIZ_FUNNEL = {
         "id": "rmwyEC",
         "image": {
          "type": "image",
-         "src": "img/rmwyEC.jpg",
+         "src": "img/rmwyEC.webp",
          "width": 178,
          "height": 178
         },
@@ -317,7 +333,7 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": "img/6c15XE.jpg",
+       "src": "img/6c15XE.webp",
        "width": 640,
        "height": 360
       },
@@ -336,17 +352,13 @@ window.QUIZ_FUNNEL = {
      "title": "Imagem",
      "icon": "image",
      "type": "image",
-     "design": {
-      "basis": "60",
-      "horizontalAlign": "mx-auto"
-     },
+     "design": {},
      "content": {
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
-       "width": 1027,
-       "height": 1092
+       "src": "img/mecanismo.webp",
+       "width": 900,
+       "height": 563
       },
       "id": "ociRY0",
       "name": "L4ISs3"
@@ -358,7 +370,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">O treino de Reativação Muscular é uma opção de condicionamento físico fácil e eficaz</h1><p class=\"ql-align-center\">Nosso desafio ajuda você a <strong style=\"color: rgb(245, 158, 11);\">eliminar a flacidez e deixar seu corpo durinho, </strong><strong style=\"color: rgb(9, 9, 11);\">trabalhando as principais áreas: Braço, pernas, barriga e glúteos</strong><strong style=\"color: rgb(245, 158, 11);\">. </strong>sem usar nenhum equipamento em casa.</p><p class=\"ql-align-center\">Com exercícios tranquilos e divertidos de fazer!</p>",
+      "text": "<h1 class=\"ql-align-center\">A calistenia é o treino com o peso do próprio corpo: fácil de começar e muito eficaz</h1><p class=\"ql-align-center\">Nos desafios de 21 dias da <strong style=\"color: rgb(245, 158, 11);\">{{produto}}</strong> você trabalha as principais áreas: <strong>braços, pernas, barriga e glúteos</strong>, sem nenhum equipamento, em casa.</p><p class=\"ql-align-center\">Com exercícios simples e adaptados para quem está começando!</p>",
       "id": "i8BDTY",
       "name": "OIgmwv"
      }
@@ -396,17 +408,13 @@ window.QUIZ_FUNNEL = {
      "title": "Imagem",
      "icon": "image",
      "type": "image",
-     "design": {
-      "basis": "62",
-      "horizontalAlign": "mx-auto"
-     },
+     "design": {},
      "content": {
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
-       "width": 1027,
-       "height": 1092
+       "src": "img/mecanismo.webp",
+       "width": 900,
+       "height": 563
       },
       "id": "XxTBYo",
       "name": "zx6s4b"
@@ -418,7 +426,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">Você vai amar!</h1><p class=\"ql-align-center\">Nosso desafio ajuda você a ficar com o corpo durinho, trabalhando as principais áreas: <strong>braços, barriga, pernas e glúteos.</strong> 🍑 </p><p class=\"ql-align-center\">Em casa e sem usar nenhum equipamento.</p><p class=\"ql-align-center\">Com exercícios tranquilos e divertidos de fazer!</p>",
+      "text": "<h1 class=\"ql-align-center\">Você vai amar!</h1><p class=\"ql-align-center\">Os desafios de 21 dias da <strong>{{produto}}</strong> ajudam você a deixar o corpo durinho, trabalhando <strong>braços, barriga, pernas e glúteos.</strong> 🍑</p><p class=\"ql-align-center\">Em casa, sem equipamento, só com o peso do corpo.</p>",
       "id": "R0pa5G",
       "name": "vvVUuS"
      }
@@ -498,7 +506,7 @@ window.QUIZ_FUNNEL = {
         "id": "8fnVmT",
         "image": {
          "type": "image",
-         "src": "img/8fnVmT.jpg",
+         "src": "img/8fnVmT.webp",
          "width": 178,
          "height": 178
         },
@@ -587,7 +595,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><strong>{{nome}}, o que mais espera alcançar com este </strong><strong style=\"color: rgb(245, 158, 11);\">desafio?</strong></h1><p class=\"ql-align-center\">escolha todos que se aplicam:</p>",
+      "text": "<h1 class=\"ql-align-center\"><strong>{{nome}}, o que mais espera alcançar com a </strong><strong style=\"color: rgb(245, 158, 11);\">calistenia?</strong></h1><p class=\"ql-align-center\">escolha todos que se aplicam:</p>",
       "id": "NyFhx8",
       "name": "c61HkN"
      }
@@ -722,8 +730,8 @@ window.QUIZ_FUNNEL = {
         "image": {
          "type": "image",
          "src": "img/rLyoZI.webp",
-         "width": null,
-         "height": null
+         "width": 192,
+         "height": 160
         },
         "label": "<p>Magro</p>",
         "destination": "next"
@@ -733,8 +741,8 @@ window.QUIZ_FUNNEL = {
         "image": {
          "type": "image",
          "src": "img/XNw5g0.webp",
-         "width": null,
-         "height": null
+         "width": 192,
+         "height": 160
         },
         "label": "<p>Médio</p>",
         "destination": "next"
@@ -744,9 +752,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Barriga pochete</p>",
         "image": {
          "type": "image",
-         "src": "img/XmX4P8.png",
-         "width": null,
-         "height": null
+         "src": "img/XmX4P8.webp",
+         "width": 192,
+         "height": 170
         }
        },
        {
@@ -755,8 +763,8 @@ window.QUIZ_FUNNEL = {
         "image": {
          "type": "image",
          "src": "img/3PYkAT.webp",
-         "width": null,
-         "height": null
+         "width": 192,
+         "height": 160
         }
        }
       ],
@@ -806,8 +814,8 @@ window.QUIZ_FUNNEL = {
         "image": {
          "type": "image",
          "src": "img/xrjTl1.webp",
-         "width": null,
-         "height": null
+         "width": 192,
+         "height": 160
         },
         "label": "<p>Magro</p>",
         "destination": "next"
@@ -817,8 +825,8 @@ window.QUIZ_FUNNEL = {
         "image": {
          "type": "image",
          "src": "img/htn4ln.webp",
-         "width": null,
-         "height": null
+         "width": 192,
+         "height": 160
         },
         "label": "<p>Tonificado</p>",
         "destination": "next"
@@ -829,8 +837,8 @@ window.QUIZ_FUNNEL = {
         "image": {
          "type": "image",
          "src": "img/YXQV6O.webp",
-         "width": null,
-         "height": null
+         "width": 192,
+         "height": 160
         }
        },
        {
@@ -838,9 +846,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Busco perder apenas alguns kg</p>",
         "image": {
          "type": "image",
-         "src": "img/8napFL.jpg",
-         "width": null,
-         "height": null
+         "src": "img/8napFL.webp",
+         "width": 220,
+         "height": 192
         }
        }
       ],
@@ -889,9 +897,9 @@ window.QUIZ_FUNNEL = {
         "id": "VHvQlS",
         "image": {
          "type": "image",
-         "src": "img/VHvQlS.png",
-         "width": null,
-         "height": null
+         "src": "img/VHvQlS.webp",
+         "width": 240,
+         "height": 200
         },
         "label": "<p>Eu tenho dificuldades para perder peso</p>",
         "destination": "next"
@@ -900,9 +908,9 @@ window.QUIZ_FUNNEL = {
         "id": "0IWp5x",
         "image": {
          "type": "image",
-         "src": "img/0IWp5x.jpg",
-         "width": null,
-         "height": null
+         "src": "img/0IWp5x.webp",
+         "width": 178,
+         "height": 178
         },
         "label": "<p>Eu ganho peso e perco peso facilmente</p>",
         "destination": "next"
@@ -912,9 +920,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Ganho peso facilmente, mas tenho dificuldade para perder</p>",
         "image": {
          "type": "image",
-         "src": "img/lzfO7R.jpg",
-         "width": null,
-         "height": null
+         "src": "img/lzfO7R.webp",
+         "width": 178,
+         "height": 178
         }
        }
       ],
@@ -963,9 +971,9 @@ window.QUIZ_FUNNEL = {
         "id": "S0VVRE",
         "image": {
          "type": "image",
-         "src": "img/S0VVRE.jpg",
-         "width": null,
-         "height": null
+         "src": "img/S0VVRE.webp",
+         "width": 178,
+         "height": 178
         },
         "label": "<p>Menos de um ano atrás</p>",
         "destination": "next"
@@ -974,9 +982,9 @@ window.QUIZ_FUNNEL = {
         "id": "2dWTwT",
         "image": {
          "type": "image",
-         "src": "img/2dWTwT.jpg",
-         "width": null,
-         "height": null
+         "src": "img/2dWTwT.webp",
+         "width": 240,
+         "height": 200
         },
         "label": "<p>1 a 2 anos atrás</p>",
         "destination": "next"
@@ -986,9 +994,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Mais de 3 anos atrás</p>",
         "image": {
          "type": "image",
-         "src": "img/qYqZkd.jpg",
-         "width": null,
-         "height": null
+         "src": "img/qYqZkd.webp",
+         "width": 178,
+         "height": 178
         }
        },
        {
@@ -996,9 +1004,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Nunca</p>",
         "image": {
          "type": "image",
-         "src": "img/fKK9CD.jpg",
-         "width": null,
-         "height": null
+         "src": "img/fKK9CD.webp",
+         "width": 178,
+         "height": 178
         }
        }
       ],
@@ -1048,9 +1056,9 @@ window.QUIZ_FUNNEL = {
         "id": "mLfvho",
         "image": {
          "type": "image",
-         "src": "img/mLfvho.png",
-         "width": null,
-         "height": null
+         "src": "img/mLfvho.webp",
+         "width": 192,
+         "height": 160
         },
         "label": "<p>Barriga</p>",
         "destination": "next"
@@ -1059,9 +1067,9 @@ window.QUIZ_FUNNEL = {
         "id": "8BFQrg",
         "image": {
          "type": "image",
-         "src": "img/8BFQrg.png",
-         "width": null,
-         "height": null
+         "src": "img/8BFQrg.webp",
+         "width": 192,
+         "height": 160
         },
         "label": "<p>Glúteos</p>",
         "destination": "next"
@@ -1071,9 +1079,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Quadris</p>",
         "image": {
          "type": "image",
-         "src": "img/ge26cx.png",
-         "width": null,
-         "height": null
+         "src": "img/ge26cx.webp",
+         "width": 192,
+         "height": 160
         }
        },
        {
@@ -1081,9 +1089,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Pernas</p>",
         "image": {
          "type": "image",
-         "src": "img/nqxrm8.png",
-         "width": null,
-         "height": null
+         "src": "img/nqxrm8.webp",
+         "width": 192,
+         "height": 160
         }
        },
        {
@@ -1091,9 +1099,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Braços</p>",
         "image": {
          "type": "image",
-         "src": "img/03jVEn.png",
-         "width": null,
-         "height": null
+         "src": "img/03jVEn.webp",
+         "width": 192,
+         "height": 160
         }
        }
       ],
@@ -1172,7 +1180,7 @@ window.QUIZ_FUNNEL = {
         "id": "2aCIMi",
         "image": {
          "type": "image",
-         "src": "img/2aCIMi.png",
+         "src": "img/2aCIMi.webp",
          "width": 240,
          "height": 240
         },
@@ -1184,7 +1192,7 @@ window.QUIZ_FUNNEL = {
         "id": "P2yZ3L",
         "image": {
          "type": "image",
-         "src": "img/P2yZ3L.png",
+         "src": "img/P2yZ3L.webp",
          "width": 240,
          "height": 240
         },
@@ -1197,9 +1205,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Pé e tornozelo</p>",
         "image": {
          "type": "image",
-         "src": "img/9LQGYE.jpg",
-         "width": 1024,
-         "height": 1024
+         "src": "img/9LQGYE.webp",
+         "width": 240,
+         "height": 240
         },
         "destination": "W7pKBj",
         "score": "30"
@@ -1235,10 +1243,9 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
-       "width": 605,
-       "height": 338
+       "src": "img/nkKJhK.webp",
+       "width": 650,
+       "height": 768
       },
       "id": "baiqPz",
       "name": "scFExn"
@@ -1301,7 +1308,7 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": "img/nkKJhK.png",
+       "src": "img/nkKJhK.webp",
        "width": 650,
        "height": 768
       },
@@ -1370,7 +1377,7 @@ window.QUIZ_FUNNEL = {
       "id": "9XdBzy",
       "image": {
        "type": "image",
-       "src": "img/MKfUZX.png",
+       "src": "img/MKfUZX.webp",
        "width": 650,
        "height": 768
       },
@@ -1495,9 +1502,9 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": "img/xcpfGm.png",
-       "width": null,
-       "height": null
+       "src": "img/xcpfGm.webp",
+       "width": 650,
+       "height": 768
       },
       "id": "uFrsqh",
       "name": "y9UBhr"
@@ -1618,8 +1625,8 @@ window.QUIZ_FUNNEL = {
         "image": {
          "type": "image",
          "src": "img/mzIImk.webp",
-         "width": null,
-         "height": null
+         "width": 240,
+         "height": 362
         },
         "label": "<p>Eu passo a maior parte do dia sentada</p>",
         "destination": "next"
@@ -1629,8 +1636,8 @@ window.QUIZ_FUNNEL = {
         "image": {
          "type": "image",
          "src": "img/9ix3Gt.webp",
-         "width": null,
-         "height": null
+         "width": 240,
+         "height": 360
         },
         "label": "<p>Passo boa parte do meu dia em pé</p>",
         "destination": "next"
@@ -1640,9 +1647,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Faço pausas regularmente</p>",
         "image": {
          "type": "image",
-         "src": "img/arXrXb.png",
-         "width": null,
-         "height": null
+         "src": "img/arXrXb.webp",
+         "width": 240,
+         "height": 284
         }
        }
       ],
@@ -1700,9 +1707,9 @@ window.QUIZ_FUNNEL = {
         "id": "DGyIgI",
         "image": {
          "type": "image",
-         "src": "img/DGyIgI.jpg",
-         "width": null,
-         "height": null
+         "src": "img/DGyIgI.webp",
+         "width": 240,
+         "height": 200
         },
         "label": "<p>Sinto uma queda de energia depois do almoço</p>",
         "destination": "next"
@@ -1741,7 +1748,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">O Desafio ajudará você a <span style=\"color: rgb(245, 158, 11);\">recuperar massa muscular,</span><span style=\"color: rgb(250, 204, 21);\"> </span><span style=\"color: rgb(9, 9, 11);\">dando mais firmeza e resistência no seu corpo</span></h1><p class=\"ql-align-center\">Esse <strong>protocolo de exercícios</strong> irá desinflamar o seu organismo, acelerar o metabolismo e tonificar a sua musculatura.</p><p class=\"ql-align-center\">Queremos que você transforme seu corpo por completo!</p>",
+      "text": "<h1 class=\"ql-align-center\">A <span style=\"color: rgb(245, 158, 11);\">{{produto}}</span> vai ajudar você a <span style=\"color: rgb(245, 158, 11);\">recuperar massa muscular</span>, com mais firmeza e resistência no corpo</h1><p class=\"ql-align-center\">Em cada <strong>desafio de 21 dias</strong> você fortalece os músculos, acelera o metabolismo e tonifica o corpo inteiro, só com o peso do corpo.</p><p class=\"ql-align-center\">Queremos que você transforme seu corpo por completo!</p>",
       "id": "KI9gLh",
       "name": "Oo738I"
      }
@@ -1754,9 +1761,9 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": "img/wJHclw.jpg",
-       "width": null,
-       "height": null
+       "src": "img/wJHclw.webp",
+       "width": 900,
+       "height": 506
       },
       "id": "oxlaUz",
       "name": "HxLpqh"
@@ -1859,9 +1866,9 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": "img/wUcFwO.jpg",
-       "width": null,
-       "height": null
+       "src": "img/wUcFwO.webp",
+       "width": 900,
+       "height": 900
       },
       "id": "8rpPxg",
       "name": "TXvlts"
@@ -1953,9 +1960,9 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": "img/hUzGAc.jpg",
-       "width": null,
-       "height": null
+       "src": "img/hUzGAc.webp",
+       "width": 900,
+       "height": 900
       },
       "id": "spONVj",
       "name": "Lu3ZRo"
@@ -2201,9 +2208,9 @@ window.QUIZ_FUNNEL = {
         "id": "6OCA6V",
         "image": {
          "type": "image",
-         "src": "img/6OCA6V.jpg",
-         "width": null,
-         "height": null
+         "src": "img/6OCA6V.webp",
+         "width": 178,
+         "height": 178
         },
         "label": "<p>Não</p>",
         "destination": "next"
@@ -2302,9 +2309,9 @@ window.QUIZ_FUNNEL = {
         "id": "pBzX3u",
         "image": {
          "type": "image",
-         "src": "img/pBzX3u.png",
-         "width": null,
-         "height": null
+         "src": "img/pBzX3u.webp",
+         "width": 240,
+         "height": 200
         },
         "label": "<p>Comer por emoção ou tédio</p>",
         "destination": "next"
@@ -2339,9 +2346,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Nenhum dos itens acima</p>",
         "image": {
          "type": "image",
-         "src": "img/3Vf6Oq.jpg",
-         "width": null,
-         "height": null
+         "src": "img/3Vf6Oq.webp",
+         "width": 178,
+         "height": 178
         }
        }
       ],
@@ -2838,7 +2845,7 @@ window.QUIZ_FUNNEL = {
       "horizontalAlign": "mx-auto"
      },
      "content": {
-      "text": "<p><strong>✅ Perguntamos a sua idade exata para trazer conteúdos mais personalizados</strong></p><p>Mulheres acima dos 40 anos tendem a ter mais gordura corporal e menos massa magra (músculos) do que pessoas mais jovens com o mesmo IMC.</p>",
+      "text": "<p><strong>✅ Perguntamos a sua idade exata para personalizar o seu desafio</strong></p><p>A partir dos 30 anos a mulher começa a perder massa muscular a cada década quando não treina força. Por isso ajustamos a intensidade dos treinos à sua idade.</p>",
       "id": "rT14WF",
       "name": "flohB5"
      }
@@ -3200,9 +3207,9 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Não</p>",
         "image": {
          "type": "image",
-         "src": "img/b2PpQC.jpg",
-         "width": null,
-         "height": null
+         "src": "img/b2PpQC.webp",
+         "width": 178,
+         "height": 178
         }
        }
       ],
@@ -3261,54 +3268,22 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">Mulheres que transformaram seus corpos depois dos 40 anos 😍</h1>",
+      "text": "<h2 class=\"ql-align-center\">Por que calistenia depois dos 30? 😍</h2><p class=\"ql-align-center\">Fortalece músculos e articulações, melhora a postura e acelera o metabolismo, usando só o peso do seu corpo.</p>",
       "id": "YEtXHQ",
       "name": "BntteR"
      }
     },
     {
-     "id": "BfRueT",
-     "title": "Carrossel",
-     "type": "carousel",
-     "design": {
-      "style": "border",
-      "cols": "10",
-      "horizontalAlign": "mx-auto",
-      "verticalAlign": "self-start"
-     },
+     "id": "mec037",
+     "type": "image",
+     "design": [],
      "content": {
-      "centered": true,
-      "spoiler": true,
-      "pagination": true,
-      "layout": "image",
-      "items": [
-       {
-        "id": "eiaHV4",
-        "image": {
-         "type": "image",
-         "src": null,
-         "placeholder": true,
-         "width": 587,
-         "height": 640
-        },
-        "text": "<p class='ql-align-center'>Exemplo de descrição</p>"
-       },
-       {
-        "id": "FEYmcR",
-        "image": {
-         "type": "image",
-         "src": null,
-         "placeholder": true,
-         "width": 587,
-         "height": 640
-        },
-        "text": "<p class=\"ql-align-center\">Exemplo de descrição</p>"
-       }
-      ],
-      "id": "TxYjIe",
-      "name": "KgKr7w",
-      "autoplay": true,
-      "delay": "5"
+      "image": {
+       "type": "image",
+       "src": "img/mecanismo.webp",
+       "width": 900,
+       "height": 563
+      }
      }
     }
    ],
@@ -3332,7 +3307,7 @@ window.QUIZ_FUNNEL = {
       "contrast": false
      },
      "content": {
-      "text": "<h2 class=\"ql-align-center\">Protocolo de 21 dias quase pronto! 💪</h2><p class=\"ql-align-center\"><span style=\"color: rgb(9, 9, 11);\">De acordo com suas respostas, você está pronta para tonificar seu corpo e ter resultados nas próximas semanas</span></p>",
+      "text": "<h2 class=\"ql-align-center\">Seu desafio de 21 dias está quase pronto! 💪</h2><p class=\"ql-align-center\"><span style=\"color: rgb(9, 9, 11);\">De acordo com suas respostas, você está pronta para tonificar seu corpo e ter resultados nas próximas semanas</span></p>",
       "id": "Y1iCtt",
       "name": "qZzHgc"
      }
@@ -3419,8 +3394,8 @@ window.QUIZ_FUNNEL = {
         "image": {
          "type": "image",
          "src": "img/PfGhXw.webp",
-         "width": null,
-         "height": null
+         "width": 800,
+         "height": 200
         },
         "label": "<p><br></p>",
         "destination": "next",
@@ -3432,8 +3407,8 @@ window.QUIZ_FUNNEL = {
         "image": {
          "type": "image",
          "src": "img/CGa8aq.webp",
-         "width": null,
-         "height": null
+         "width": 800,
+         "height": 200
         },
         "value": "todos os dias"
        }
@@ -3457,7 +3432,7 @@ window.QUIZ_FUNNEL = {
      "content": {
       "title": null,
       "name": "zGRTGu",
-      "description": "<p class=\"ql-align-center\"><strong>Preparando o seu desafio de 21 dias</strong></p><p class=\"ql-align-center\">aguarde um momento...</p>",
+      "description": "<p class=\"ql-align-center\"><strong>Montando o seu desafio de 21 dias de calistenia</strong></p><p class=\"ql-align-center\">aguarde um momento...</p>",
       "seconds": 7,
       "starts": 0,
       "destination": "next",
@@ -3479,81 +3454,16 @@ window.QUIZ_FUNNEL = {
      }
     },
     {
-     "id": "kyQxrU",
-     "title": "Texto",
-     "type": "text",
+     "id": "mock40",
+     "type": "image",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><span style=\"color: rgb(9, 9, 11);\">Milhares de mulheres transformadas</span></h1>",
-      "id": "Whkr4Y",
-      "name": "yDgPCQ"
-     }
-    },
-    {
-     "id": "rLYm0C",
-     "title": "Carrossel",
-     "type": "carousel",
-     "design": {
-      "style": "border",
-      "cols": "10",
-      "horizontalAlign": "mx-auto",
-      "verticalAlign": "self-start"
-     },
-     "content": {
-      "centered": true,
-      "spoiler": true,
-      "pagination": true,
-      "layout": "image",
-      "items": [
-       {
-        "id": "eiaHV4",
-        "image": {
-         "type": "image",
-         "src": null,
-         "placeholder": true,
-         "width": null,
-         "height": null
-        },
-        "text": "<p class='ql-align-center'>Exemplo de descrição</p>"
-       },
-       {
-        "id": "FEYmcR",
-        "image": {
-         "type": "image",
-         "src": null,
-         "placeholder": true,
-         "width": null,
-         "height": null
-        },
-        "text": "<p class=\"ql-align-center\">Exemplo de descrição</p>"
-       },
-       {
-        "id": "wuWve1",
-        "text": null,
-        "image": {
-         "type": "image",
-         "src": null,
-         "placeholder": true,
-         "width": null,
-         "height": null
-        }
-       },
-       {
-        "id": "Heouy5",
-        "text": null,
-        "image": {
-         "type": "image",
-         "src": null,
-         "placeholder": true,
-         "width": null,
-         "height": null
-        }
-       }
-      ],
-      "id": "BhBemn",
-      "name": "lf0daX",
-      "autoplay": true,
-      "delay": "2"
+      "image": {
+       "type": "image",
+       "src": "img/mockup.webp",
+       "width": 900,
+       "height": 619
+      }
      }
     }
    ],
@@ -3577,7 +3487,7 @@ window.QUIZ_FUNNEL = {
       "id": "Gi770o",
       "image": {
        "type": "image",
-       "src": "img/KTNYmo.jpg",
+       "src": "img/KTNYmo.webp",
        "width": 640,
        "height": 360
       },
@@ -3591,7 +3501,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">{{nome}}, O seu {{produto}} está pronto!</h1>",
+      "text": "<h1 class=\"ql-align-center\">{{nome}}, o seu desafio de 21 dias da <span style=\"color: rgb(245, 158, 11);\">{{produto}}</span> está pronto!</h1>",
       "id": "GTHcoQ",
       "name": "Jcn3Uc"
      }
@@ -3683,9 +3593,9 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": "img/5u9knP.jpg",
-       "width": 1024,
-       "height": 1024
+       "src": "img/5u9knP.webp",
+       "width": 900,
+       "height": 900
       },
       "id": "PctNns",
       "name": "l1yugy"
@@ -3742,7 +3652,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><strong>{{nome}}, O seu {{produto}} está pronto!</strong></h1>",
+      "text": "<h1 class=\"ql-align-center\"><strong>{{nome}}, o seu desafio de 21 dias da </strong><strong style=\"color: rgb(245, 158, 11);\">{{produto}}</strong><strong> está pronto!</strong></h1>",
       "id": "ZQ32vu",
       "name": "0Vwzcf"
      }
@@ -3755,14 +3665,14 @@ window.QUIZ_FUNNEL = {
       "style": "theme"
      },
      "content": {
-      "title": "<p><strong>{{produto}}</strong></p><p>Oferta Exclusiva</p>",
+      "title": "<p><strong>{{produto}}</strong></p><p>Desafios de 21 dias</p>",
       "value": "{{preco}}",
       "before": "de <s>{{preco_de}}</s> por",
       "after": "{{parcelas}}",
       "redirect": true,
       "id": "QSTf4g",
       "name": "zObuSM",
-      "featured": "CONDIÇÃO ESPECIAL - 80% OFF 🎁",
+      "featured": "CONDIÇÃO ESPECIAL 🎁",
       "type": null
      }
     },
@@ -3801,7 +3711,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<p class=\"ql-align-center\"><strong class=\"ql-size-small\" style=\"background-color: rgb(9, 9, 11); color: rgb(255, 255, 255);\">🎁 ACESSO POR UM ANO INTEIRO</strong></p>",
+      "text": "<p class=\"ql-align-center\"><strong class=\"ql-size-small\" style=\"background-color: rgb(9, 9, 11); color: rgb(255, 255, 255);\">🎁 {{acesso}}</strong></p>",
       "id": "N194Bt",
       "name": "7fJqqI"
      }
@@ -3821,14 +3731,13 @@ window.QUIZ_FUNNEL = {
      "id": "cazmCj",
      "title": "Imagem",
      "type": "image",
-     "design": [],
+     "design": {},
      "content": {
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
-       "width": 640,
-       "height": 423
+       "src": "img/mockup.webp",
+       "width": 900,
+       "height": 619
       },
       "id": "3T3MmZ",
       "name": "ux272y"
@@ -3840,7 +3749,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><strong>O que você recebe:</strong></h1><p class=\"ql-align-center\"></p><p>✅ Protocolo completo com exercícios simples em vídeo para qualquer mulher fazer;</p><p>✅ 21 treinos completos de Reativação Muscular pra fazer em casa;</p><p>✅ Plano ANTIFLACIDEZ com receitas para fazer durante o desafio de 21 dias;</p><p>✅ Exercícios de alongamento para melhorar a flexibilidade e reduzir as dores do corpo</p><p>✅ Melhora na qualidade do sono e disposição;</p><p>✅ Corpo durinho e como você deseja.</p><p>✅ Treinos gravados para realizar no horário que desejar</p>",
+      "text": "<h1 class=\"ql-align-center\"><strong>O que você recebe:</strong></h1><p>✅ Desafios de 21 dias de calistenia com treinos em vídeo, passo a passo;</p><p>✅ Treinos em casa, sem equipamento, só com o peso do corpo;</p><p>✅ Começa no nível iniciante e evolui a cada dia;</p><p>✅ Exercícios de mobilidade e alongamento para proteger joelhos e coluna;</p><p>✅ Plano ANTIFLACIDEZ com receitas para acompanhar o desafio;</p><p>✅ Treinos gravados para fazer no horário que quiser.</p>",
       "id": "kjvzsL",
       "name": "5g1Yx0"
      }
@@ -3874,9 +3783,9 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": "img/XXoJwL.png",
-       "width": null,
-       "height": null
+       "src": "img/XXoJwL.webp",
+       "width": 495,
+       "height": 330
       },
       "id": "u8f39N",
       "name": "caGeOw"
@@ -3907,31 +3816,6 @@ window.QUIZ_FUNNEL = {
      }
     },
     {
-     "id": "zWEpO3",
-     "title": "Texto",
-     "type": "text",
-     "design": [],
-     "content": {
-      "text": "<h2 class=\"ql-align-center\"><strong>Mulheres que Redescobriram a Saúde e a Felicidade depois dos 40 anos</strong></h2>",
-      "id": "ACJX9p",
-      "name": "JVEDOw"
-     }
-    },
-    {
-     "id": "t6hkxs",
-     "title": "Vídeo",
-     "type": "video",
-     "design": [],
-     "content": {
-      "title": null,
-      "description": null,
-      "id": "jun221",
-      "name": "CFVLeG",
-      "video": "",
-      "placeholder": true
-     }
-    },
-    {
      "id": "iSbdX6",
      "title": "Espaço",
      "type": "clear",
@@ -3943,20 +3827,6 @@ window.QUIZ_FUNNEL = {
      }
     },
     {
-     "id": "GKJo09",
-     "title": "Vídeo",
-     "type": "video",
-     "design": [],
-     "content": {
-      "title": null,
-      "description": null,
-      "id": "uKEFpx",
-      "name": "fVAbp6",
-      "video": "",
-      "placeholder": true
-     }
-    },
-    {
      "id": "zcX7Ps",
      "title": "Preço",
      "type": "price",
@@ -3964,14 +3834,14 @@ window.QUIZ_FUNNEL = {
       "style": "theme"
      },
      "content": {
-      "title": "<p><strong>{{produto}}</strong></p><p>Oferta Exclusiva</p>",
+      "title": "<p><strong>{{produto}}</strong></p><p>Desafios de 21 dias</p>",
       "value": "{{preco}}",
       "before": "de <s>{{preco_de}}</s> por",
       "after": "{{parcelas}}",
       "redirect": true,
       "id": "KNmHJa",
       "name": "8gPCe0",
-      "featured": "CONDIÇÃO ESPECIAL - 80% OFF",
+      "featured": "CONDIÇÃO ESPECIAL 🎁",
       "type": null
      }
     },
@@ -4010,46 +3880,22 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h2 class=\"ql-align-center\">Quem será sua professora?</h2><p class=\"ql-align-center\">{{bio}}</p>",
+      "text": "<h1 class=\"ql-align-center\">Como funciona</h1><p>1️⃣ Todo dia um treino novo em vídeo, curto e guiado.</p><p>2️⃣ Você treina em casa, no seu horário, só com o peso do corpo.</p><p>3️⃣ A intensidade sobe aos poucos, para você evoluir sem se machucar.</p><p>4️⃣ Terminou os 21 dias? É só começar o próximo desafio.</p>",
       "id": "yy7D9v",
       "name": "uVWAOp"
      }
     },
     {
-     "id": "Gx4JRq",
-     "title": "Imagem",
+     "id": "mec042",
      "type": "image",
      "design": [],
      "content": {
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
-       "width": null,
-       "height": null
-      },
-      "id": "mKPvXl",
-      "name": "t1eeAr"
-     }
-    },
-    {
-     "id": "mhzye7",
-     "title": "Imagem",
-     "type": "image",
-     "design": {
-      "basis": "68",
-      "horizontalAlign": "mx-auto"
-     },
-     "content": {
-      "image": {
-       "type": "image",
-       "src": null,
-       "placeholder": true,
-       "width": 1242,
-       "height": 948
-      },
-      "id": "hg1dUC",
-      "name": "z6naTT"
+       "src": "img/mecanismo.webp",
+       "width": 900,
+       "height": 563
+      }
      }
     },
     {
@@ -4104,6 +3950,16 @@ window.QUIZ_FUNNEL = {
      "content": {
       "firstQuestionOpened": true,
       "questions": [
+       {
+        "id": "fq01",
+        "question": "Preciso de algum equipamento?",
+        "answer": "<p>Não. A calistenia usa só o peso do seu corpo. No máximo um tapetinho ou uma toalha.</p>"
+       },
+       {
+        "id": "fq02",
+        "question": "Nunca treinei. Consigo fazer?",
+        "answer": "<p>Sim. Os treinos começam no nível iniciante e evoluem aos poucos ao longo dos 21 dias.</p>"
+       },
        {
         "id": "fFRyls",
         "question": "Consigo assistir na TV?",

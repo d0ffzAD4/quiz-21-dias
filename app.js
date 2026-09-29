@@ -114,7 +114,12 @@
     var src = imgSrc(id, image);
     if (src) {
       var im = h('img');
-      im.src = src; im.alt = ''; im.loading = 'lazy';
+      im.alt = ''; im.decoding = 'async';
+      // largura/altura reais evitam a página "pular" enquanto a imagem carrega
+      if (image.width && image.height && !(CFG.imagens && CFG.imagens[id])) { im.width = image.width; im.height = image.height; }
+      // as imagens da etapa atual já estão pré-carregadas; o resto (rolagem) carrega sob demanda
+      if (!eagerStep) im.loading = 'lazy';
+      im.src = src;
       return im;
     }
     if (image && image.placeholder && CFG.mostrarPlaceholders !== false) {
@@ -122,6 +127,39 @@
     }
     return null;
   }
+
+  // pré-carrega as imagens das próximas etapas possíveis para a troca de tela ser instantânea
+  var warmed = {};
+  function stepImages(step) {
+    var out = [];
+    step.layers.forEach(function (l) {
+      var c = l.content || {};
+      if (l.type === 'image') out.push(imgSrc(l.id, c.image));
+      if (l.type === 'options') c.options.forEach(function (o) { if (!o.image || o.image.type !== 'emoji') out.push(imgSrc(o.id, o.image)); });
+      if (l.type === 'carousel') c.items.forEach(function (it) { out.push(imgSrc(it.id, it.image)); });
+    });
+    return out.filter(Boolean);
+  }
+  function nextSteps(idx) {
+    var ids = [idx + 1];
+    steps[idx].layers.forEach(function (l) {
+      var c = l.content || {};
+      (c.options || []).forEach(function (o) { ids.push(destIndex(nav[o.id] || o.destination)); });
+      if (l.type === 'button' && c.type !== 'redirect') ids.push(destIndex(nav[c.id] || c.destination));
+      if (l.type === 'loading') ids.push(destIndex(c.destination));
+    });
+    return ids.filter(function (i, k, a) { return i > idx && i < steps.length && a.indexOf(i) === k; });
+  }
+  function warm(idx) {
+    nextSteps(idx).forEach(function (i) {
+      stepImages(steps[i]).forEach(function (src) {
+        if (warmed[src]) return;
+        warmed[src] = true;
+        var im = new Image(); im.decoding = 'async'; im.src = src;
+      });
+    });
+  }
+  var eagerStep = true;
 
   function spacing(cls) {
     var m = /h-\[([\d.]+)rem\]/.exec(cls || '');
@@ -557,7 +595,7 @@
     row.appendChild(bk);
     var logo = h('div', 'logo');
     if (CFG.logo) { var im = h('img'); im.src = CFG.logo; im.alt = CFG.produto || ''; logo.appendChild(im); }
-    else logo.appendChild(h('span', 'logo-txt', esc(CFG.produto || '')));
+    else logo.appendChild(h('span', 'logo-txt', esc(CFG.produto || '').replace(/(\d+\+)/, '<b>$1</b>')));
     row.appendChild(logo);
     row.appendChild(h('span', 'back-sp'));
     hd.appendChild(row);
@@ -575,6 +613,8 @@
     stepValidators = [];
     current = idx;
     var step = steps[idx];
+    // telas do quiz carregam tudo de uma vez; a página de venda (longa) carrega conforme a rolagem
+    eagerStep = idx !== steps.length - 1;
     app.innerHTML = '';
     var main = h('main', 'step');
     main.id = 'step_' + step.id;
@@ -602,6 +642,8 @@
     refreshState();
     window.scrollTo(0, 0);
     track('quiz_step', { step_index: idx, step_id: step.id, step_title: step.title });
+    // depois que a etapa atual pintou, aquece as próximas
+    (window.requestIdleCallback || setTimeout)(function () { warm(idx); });
   }
 
   /* ---------- início ---------- */
