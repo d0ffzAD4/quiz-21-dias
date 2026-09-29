@@ -317,8 +317,7 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
+       "src": "img/6c15XE.jpg",
        "width": 640,
        "height": 360
       },
@@ -1302,8 +1301,7 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
+       "src": "img/nkKJhK.png",
        "width": 650,
        "height": 768
       },
@@ -1372,8 +1370,7 @@ window.QUIZ_FUNNEL = {
       "id": "9XdBzy",
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
+       "src": "img/MKfUZX.png",
        "width": 650,
        "height": 768
       },
@@ -1498,8 +1495,7 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
+       "src": "img/xcpfGm.png",
        "width": null,
        "height": null
       },
@@ -1644,8 +1640,7 @@ window.QUIZ_FUNNEL = {
         "label": "<p>Faço pausas regularmente</p>",
         "image": {
          "type": "image",
-         "src": null,
-         "placeholder": true,
+         "src": "img/arXrXb.png",
          "width": null,
          "height": null
         }
@@ -1759,8 +1754,7 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
+       "src": "img/wJHclw.jpg",
        "width": null,
        "height": null
       },
@@ -3583,8 +3577,7 @@ window.QUIZ_FUNNEL = {
       "id": "Gi770o",
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
+       "src": "img/KTNYmo.jpg",
        "width": 640,
        "height": 360
       },
@@ -3690,8 +3683,7 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": null,
-       "placeholder": true,
+       "src": "img/5u9knP.jpg",
        "width": 1024,
        "height": 1024
       },
