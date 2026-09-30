@@ -267,7 +267,7 @@
         go(nav[c.id] || c.destination);
       });
     }
-    if (d.fixed) { var w = h('div', 'fixed-bar'); w.appendChild(b); return w; }
+    if (d.fixed || c.type !== 'redirect') { var w = h('div', 'fixed-bar'); w.appendChild(b); return w; }
     return b;
   };
 
@@ -626,6 +626,7 @@
       var el = fn(l);
       if (!el) return;
       var w = h('div', 'layer t-' + l.type);
+      w.setAttribute('data-id', l.id);
       var d = l.design || {};
       if (d.basis && +d.basis < 100) w.style.flexBasis = d.basis + '%';
       else if (d.cols && +d.cols < 12) w.style.flexBasis = (d.cols / 12 * 100) + '%';
@@ -637,6 +638,7 @@
       body.appendChild(w);
     });
     main.appendChild(body);
+    if (body.querySelector('.fixed-bar')) main.classList.add('has-bar');
     if (CFG.rodape) main.appendChild(h('footer', 'foot-txt', interp(CFG.rodape)));
     app.appendChild(main);
     refreshState();
