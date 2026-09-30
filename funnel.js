@@ -97,6 +97,68 @@ window.QUIZ_FUNNEL = {
  },
  "steps": [
   {
+   "id": "capa01",
+   "title": "Capa (advertorial)",
+   "options": {
+    "show_back": false,
+    "show_progress": false
+   },
+   "layers": [
+    {
+     "id": "capa01h",
+     "type": "text",
+     "design": [],
+     "content": {
+      "text": "<h2 class=\"ql-align-center\"><span style=\"color: rgb(220, 38, 38);\">Urgente:</span> Mulheres de todo o Brasil estão eliminando <span style=\"color: rgb(249, 115, 22);\">+22Kg com apenas 15 minutos por dia</span> dentro de suas próprias casas sem gastar com “canetinhas”</h2>"
+     }
+    },
+    {
+     "id": "capa01i",
+     "type": "image",
+     "design": [],
+     "content": {
+      "image": {
+       "type": "image",
+       "src": "img/capa01.webp",
+       "width": 900,
+       "height": 1125
+      }
+     }
+    },
+    {
+     "id": "capa01s",
+     "type": "text",
+     "design": [],
+     "content": {
+      "text": "<p class=\"ql-align-center\">Com +30 anos e 15 minutos livres por dia, mulheres estão definindo o próprio corpo e devolvendo a autoestima perdida ao longo do tempo com apenas <strong>um desafio de 21 dias.</strong></p>"
+     }
+    },
+    {
+     "id": "capa01c",
+     "type": "clear",
+     "design": [],
+     "content": {
+      "clear": "h-[0.5rem]"
+     }
+    },
+    {
+     "id": "capa01b",
+     "type": "button",
+     "design": {
+      "style": "theme",
+      "basis": 100,
+      "pulse": true
+     },
+     "content": {
+      "id": "capa01bt",
+      "type": "next",
+      "label": "QUERO APRENDER TAMBÉM!",
+      "destination": "next"
+     }
+    }
+   ]
+  },
+  {
    "id": "otpY16",
    "title": "Primeira etapa",
    "layers": [

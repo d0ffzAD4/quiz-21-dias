@@ -15,6 +15,6 @@ Suba o arquivo em `img/` e aponte o ID em `config.js`:
 imagens: { 'sopjkw': 'img/minha-foto.webp' },
 ```
 
-O ID é o `id` da camada (ou da opção) em `funnel.js`. Para abrir direto uma etapa: `/?etapa=N` (N começa em 0).
+O ID é o `id` da camada (ou da opção) em `funnel.js`. Para abrir direto uma etapa: `/?etapa=N` (N começa em 0 = capa).
 
 Prefira WebP com no máximo 900 px de largura (imagens de opção: 240 px).
