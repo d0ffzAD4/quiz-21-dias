@@ -1239,13 +1239,16 @@ window.QUIZ_FUNNEL = {
      "title": "Imagem",
      "icon": "image",
      "type": "image",
-     "design": [],
+     "design": {
+      "basis": "70",
+      "horizontalAlign": "mx-auto"
+     },
      "content": {
       "image": {
        "type": "image",
-       "src": "img/nkKJhK.webp",
-       "width": 650,
-       "height": 768
+       "src": "img/MKfUZX.webp",
+       "width": 900,
+       "height": 1080
       },
       "id": "baiqPz",
       "name": "scFExn"
@@ -1302,15 +1305,15 @@ window.QUIZ_FUNNEL = {
      "icon": "image",
      "type": "image",
      "design": {
-      "basis": "45",
+      "basis": "70",
       "horizontalAlign": "mx-auto"
      },
      "content": {
       "image": {
        "type": "image",
-       "src": "img/nkKJhK.webp",
-       "width": 650,
-       "height": 768
+       "src": "img/MKfUZX.webp",
+       "width": 900,
+       "height": 1080
       },
       "id": "vIDA9f",
       "name": "UkD1eK"
