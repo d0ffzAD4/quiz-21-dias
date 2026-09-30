@@ -1751,7 +1751,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">A <span style=\"color: rgb(249, 115, 22);\">{{produto}}</span> vai ajudar você a <span style=\"color: rgb(249, 115, 22);\">recuperar massa muscular</span>, com mais firmeza e resistência no corpo</h1><p class=\"ql-align-center\">Em cada <strong>desafio de 21 dias</strong> você fortalece os músculos, acelera o metabolismo e tonifica o corpo inteiro, só com o peso do corpo.</p><p class=\"ql-align-center\">Queremos que você transforme seu corpo por completo!</p>",
+      "text": "<h1 class=\"ql-align-center\">A <span style=\"color: rgb(249, 115, 22);\">{{produto}}</span> vai ajudar você a <span style=\"color: rgb(249, 115, 22);\">recuperar massa muscular</span>, com mais firmeza e resistência no corpo</h1><p class=\"ql-align-center\">No desafio de 21 dias da<strong>Calistenia das 30+</strong> você acelera o seu metabolismo, recuperando a sua massa muscular e tonifica o corpo por inteiro, e isso só com o peso do seu corpo.</p><p class=\"ql-align-center\">Você verá a transformação por completo!</p>",
       "id": "KI9gLh",
       "name": "Oo738I"
      }
