@@ -180,7 +180,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<p class=\"ql-align-center\"><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\">Ao clicar em alguma das opções, você concorda com os </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Termos de utilização e serviço,</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de privacidade,</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de subscrição</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> e </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de cookies</strong></p>",
+      "text": "<p class=\"ql-align-center\"><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\">Ao clicar em alguma das opções, você concorda com </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Termos de utilização e serviço,</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de privacidade,</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de subscrição</strong><span class=\"ql-size-small\" style=\"background-color: inherit; color: rgb(140, 138, 155);\"> e </span><strong class=\"ql-size-small\" style=\"background-color: inherit;\">Política de cookies</strong></p>",
       "id": "GwlzIX",
       "name": "oXnMKE"
      }
@@ -426,7 +426,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">Você vai amar!</h1><p class=\"ql-align-center\">Os desafios de 21 dias da <strong>{{produto}}</strong> ajudam você a deixar o corpo durinho, trabalhando <strong>braços, barriga, pernas e glúteos.</strong> 🍑</p><p class=\"ql-align-center\">Em casa, sem equipamento, só com o peso do corpo.</p>",
+      "text": "<h1 class=\"ql-align-center\">Você vai amar!</h1><p class=\"ql-align-center\">O desafio de 21 dias da <strong>{{produto}}</strong> vão te deixar com corpo durinho, trabalhando <strong>braços, barriga, pernas e te deixando com os glúteos de pêssego.</strong> 🍑</p><p class=\"ql-align-center\">Em casa, sem equipamento, com 15 minutos por dia e só com o peso do corpo.</p>",
       "id": "R0pa5G",
       "name": "vvVUuS"
      }
