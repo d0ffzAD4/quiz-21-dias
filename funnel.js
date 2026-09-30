@@ -130,7 +130,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<p class=\"ql-align-center\">Descubra em menos de 2 minutos como essa mulher, com apenas alguns minutos diários, transformou a vida dela usando <strong>somente o peso do próprio corpo.</strong></p>"
+      "text": "<p class=\"ql-align-center\">Descubra em menos de 2 minutos como mulheres, com apenas alguns minutos diários, estão transformando a vida delas usando <strong>somente o peso do próprio corpo.</strong></p>"
      }
     },
     {
