@@ -109,7 +109,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h2 class=\"ql-align-center\"><span style=\"color: rgb(220, 38, 38);\">Urgente:</span> Mulheres de todo o Brasil estão eliminando <span style=\"color: rgb(249, 115, 22);\">+22Kg com apenas 15 minutos por dia</span> dentro de suas próprias casas sem gastar com “canetinhas”</h2>"
+      "text": "<h2 class=\"ql-align-center\"><span style=\"color: rgb(220, 38, 38);\">Urgente:</span> Mulheres de todo o Brasil estão eliminando <span style=\"color: rgb(249, 115, 22);\">+23Kg com apenas 15 minutos por dia</span> dentro de suas próprias casas sem gastar com “canetinhas”</h2>"
      }
     },
     {
