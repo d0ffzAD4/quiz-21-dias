@@ -319,7 +319,7 @@ window.QUIZ_FUNNEL = {
          "height": 178
         },
         "label": "<p>Não, eu nunca experimentei</p>",
-        "destination": "o4PU7N"
+        "destination": "56ZR1h"
        }
       ],
       "id": "eBvFvT"
@@ -426,7 +426,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">Você vai amar!</h1><p class=\"ql-align-center\">O desafio de 21 dias da <strong>{{produto}}</strong> vão te deixar com corpo durinho, trabalhando <strong>braços, barriga, pernas e te deixando com os glúteos de pêssego.</strong> 🍑</p><p class=\"ql-align-center\">Em casa, sem equipamento, com 15 minutos por dia e só com o peso do corpo.</p>",
+      "text": "<h1 class=\"ql-align-center\">Você vai amar!</h1><p class=\"ql-align-center\">O desafio de 21 dias da <strong>{{produto}}</strong> vai te deixar com corpo durinho, trabalhando os <strong>braços, barriga, pernas e te deixando com os glúteos de pêssego.</strong> 🍑</p><p class=\"ql-align-center\">Em casa, sem equipamento, com 15 minutos por dia e somente com o peso do corpo.</p>",
       "id": "R0pa5G",
       "name": "vvVUuS"
      }
