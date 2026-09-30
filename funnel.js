@@ -1370,7 +1370,7 @@ window.QUIZ_FUNNEL = {
      "icon": "image",
      "type": "image",
      "design": {
-      "basis": "50",
+      "basis": "70",
       "horizontalAlign": "mx-auto"
      },
      "content": {
@@ -1378,8 +1378,8 @@ window.QUIZ_FUNNEL = {
       "image": {
        "type": "image",
        "src": "img/MKfUZX.webp",
-       "width": 650,
-       "height": 768
+       "width": 900,
+       "height": 1080
       },
       "name": "Z9rMDo"
      },
