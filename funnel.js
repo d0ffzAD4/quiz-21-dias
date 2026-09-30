@@ -370,7 +370,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\">A calistenia é o treino com o peso do próprio corpo: fácil de começar e muito eficaz</h1><p class=\"ql-align-center\">Nos desafios de 21 dias da <strong style=\"color: rgb(249, 115, 22);\">{{produto}}</strong> você trabalha as principais áreas: <strong>braços, pernas, barriga e glúteos</strong>, sem nenhum equipamento, em casa.</p><p class=\"ql-align-center\">Com exercícios simples e adaptados para quem está começando!</p>",
+      "text": "<h1 class=\"ql-align-center\">A calistenia é o treino com o peso do próprio corpo: fácil de começar e muito eficaz</h1><p class=\"ql-align-center\">Nos desafios de 21 dias da <strong style=\"color: rgb(249, 115, 22);\">{{produto}}</strong> você trabalha as principais áreas: <strong>braços, pernas, barriga e glúteos</strong>, sem nenhum equipamento, em casa.</p><p class=\"ql-align-center\">Com exercícios simples e adaptados para quem está começando!</p><p class=\"ql-align-center\">Em casa, sem equipamento, com 15 minutos por dia e só com o peso do corpo.</p>",
       "id": "i8BDTY",
       "name": "OIgmwv"
      }
