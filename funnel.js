@@ -109,7 +109,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h2 class=\"ql-align-center\"><span style=\"color: rgb(220, 38, 38);\">Urgente:</span> Mulheres de todo o Brasil estão eliminando <span style=\"color: rgb(249, 115, 22);\">+23Kg com apenas 15 minutos por dia</span> dentro de suas próprias casas sem gastar com “canetinhas”</h2>"
+      "text": "<h2 class=\"ql-align-center\"><span style=\"color: rgb(220, 38, 38);\">URGENTE:</span> MULHERES 30+ ESTÃO ELIMINANDO <span style=\"color: rgb(249, 115, 22);\">+23KG COM APENAS 15 MINUTOS POR DIA</span></h2>"
      }
     },
     {
@@ -130,7 +130,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<p class=\"ql-align-center\">Com +30 anos e 15 minutos livres por dia, mulheres estão definindo o próprio corpo e devolvendo a autoestima perdida ao longo do tempo com apenas <strong>um desafio de 21 dias.</strong></p>"
+      "text": "<p class=\"ql-align-center\">Descubra em menos de 2 minutos como essa mulher, com apenas alguns minutos diários, transformou a vida dela usando <strong>somente o peso do próprio corpo.</strong></p>"
      }
     },
     {
