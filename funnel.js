@@ -23,7 +23,7 @@ window.QUIZ_FUNNEL = {
  },
  "navigation": {
   "BxHL8u": "o4PU7N",
-  "rmwyEC": "56ZR1h",
+  "rmwyEC": "o4PU7N",
   "SWsEXd": "QxYegn",
   "2aCIMi": "IsOaCM",
   "P2yZ3L": "JF0WEa",
@@ -319,7 +319,7 @@ window.QUIZ_FUNNEL = {
          "height": 178
         },
         "label": "<p>Não, eu nunca experimentei</p>",
-        "destination": "56ZR1h"
+        "destination": "o4PU7N"
        }
       ],
       "id": "eBvFvT"
