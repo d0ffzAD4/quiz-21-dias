@@ -3349,7 +3349,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h2 class=\"ql-align-center\">Mais mulheres 30+ transformando o corpo em casa 💪</h2>"
+      "text": "<h2 class=\"ql-align-center\">Milhares de brasileiras transformadas com apenas 15 Minutos por dia</h2>"
      }
     },
     {
