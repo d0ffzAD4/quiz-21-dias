@@ -3365,16 +3365,6 @@ window.QUIZ_FUNNEL = {
       "layout": "image",
       "items": [
        {
-        "id": "res06",
-        "image": {
-         "type": "image",
-         "src": "img/res06.webp",
-         "width": 600,
-         "height": 600
-        },
-        "text": null
-       },
-       {
         "id": "ad1",
         "image": {
          "type": "image",
