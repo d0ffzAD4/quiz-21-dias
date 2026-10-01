@@ -6,9 +6,9 @@ window.QUIZ_CONFIG = {
   corTema: '#f97316',                // cor principal (laranja da logo)
 
   checkout: '',                      // link do checkout (Hotmart, Kiwify...). UTMs da página são repassadas.
-  preco: 'R$ 47,00',
+  preco: 'R$ 37,90',
   preco_de: 'R$ 197,00',
-  parcelas: 'OU 6x R$ 8,82',
+  parcelas: '',                      // ex.: 'OU 6x R$ X,XX' com o valor exato do seu checkout; vazio = não mostra
   acesso: 'ACESSO POR UM ANO INTEIRO',
 
   cnpj: '',                          // preenchido = aparece no rodapé da primeira tela

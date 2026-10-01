@@ -542,7 +542,8 @@
     var right = h('div', 'p-vals');
     if (c.before) right.appendChild(h('div', 'p-before', interp(c.before)));
     right.appendChild(h('div', 'p-value', esc(interp(c.value))));
-    if (c.after) right.appendChild(h('div', 'p-after', esc(interp(c.after))));
+    var after = interp(c.after);
+    if (after.trim()) right.appendChild(h('div', 'p-after', esc(after)));
     body.appendChild(right);
     d.appendChild(body);
     if (c.redirect) {
