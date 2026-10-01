@@ -513,8 +513,8 @@
       d._i = best;
     });
     d.appendChild(rail);
-    if (c.pagination !== false) d.appendChild(dots);
-    if (c.autoplay) {
+    if (c.pagination !== false && items.length > 1) d.appendChild(dots);
+    if (c.autoplay && items.length > 1) {
       timers.push(setInterval(function () { to(((d._i || 0) + 1) % items.length); }, (parseFloat(c.delay) || 5) * 1000));
     }
     return d;

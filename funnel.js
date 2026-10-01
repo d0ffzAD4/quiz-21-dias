@@ -3345,16 +3345,36 @@ window.QUIZ_FUNNEL = {
      }
     },
     {
-     "id": "mock40",
-     "type": "image",
+     "id": "res040t",
+     "type": "text",
      "design": [],
      "content": {
-      "image": {
-       "type": "image",
-       "src": "img/mockup.webp",
-       "width": 900,
-       "height": 619
-      }
+      "text": "<h2 class=\"ql-align-center\">Mais mulheres 30+ transformando o corpo em casa 💪</h2>"
+     }
+    },
+    {
+     "id": "res040",
+     "type": "carousel",
+     "design": {},
+     "content": {
+      "centered": true,
+      "spoiler": true,
+      "pagination": true,
+      "autoplay": true,
+      "delay": "2",
+      "layout": "image",
+      "items": [
+       {
+        "id": "res06",
+        "image": {
+         "type": "image",
+         "src": "img/res06.webp",
+         "width": 600,
+         "height": 600
+        },
+        "text": null
+       }
+      ]
      }
     }
    ],
