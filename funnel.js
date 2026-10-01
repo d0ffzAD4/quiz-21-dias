@@ -2691,56 +2691,6 @@ window.QUIZ_FUNNEL = {
      }
     },
     {
-     "id": "Xo9q7U",
-     "title": "Alerta",
-     "type": "alert",
-     "design": {
-      "style": "success",
-      "basis": 100
-     },
-     "content": {
-      "text": "<p><strong style=\"color: rgb(9, 9, 11);\">✅ Seu IMC é considerável saudável</strong></p><p><span style=\"background-color: rgb(222, 243, 240); color: rgb(83, 98, 153);\">Você está fazendo um bom trabalho mantendo o seu peso na faixa saudável. Usaremos o seu índice para adaptar um programa às suas necessidades</span></p>",
-      "id": "n1Sous",
-      "name": "mwoCqS"
-     },
-     "roles": [
-      [
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": ">",
-        "value": "18.4"
-       },
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": "<=",
-        "value": "24.9"
-       }
-      ]
-     ]
-    },
-    {
-     "id": "1qxYU1",
-     "title": "Alerta",
-     "type": "alert",
-     "design": {
-      "style": "success"
-     },
-     "content": {
-      "text": "<p><strong style=\"color: rgb(9, 9, 11);\">🚨Seu IMC é considerado obesidade</strong></p><p><span style=\"color: rgb(83, 98, 153); background-color: rgb(222, 243, 240);\">Você deve prestar mais atenção ao seu peso. Usaremos seu índice para definir com mais detalhes o desafio</span></p>",
-      "id": "FXNJ6K",
-      "name": "Eni8nG"
-     },
-     "roles": [
-      [
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": ">",
-        "value": "30"
-       }
-      ]
-     ]
-    },
-    {
      "id": "rG79hT",
      "title": "Alerta",
      "type": "alert",
@@ -2751,21 +2701,7 @@ window.QUIZ_FUNNEL = {
       "text": "<p><strong style=\"color: rgb(9, 9, 11);\">🚨Seu IMC é considerado sobrepeso</strong></p><p><span style=\"color: rgb(83, 98, 153); background-color: rgb(222, 243, 240);\">Você deve prestar mais atenção ao seu peso. Usaremos seu índice para definir com mais detalhes o desafio</span></p>",
       "id": "kcwnqX",
       "name": "YW1i8v"
-     },
-     "roles": [
-      [
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": ">",
-        "value": "25"
-       },
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": "<=",
-        "value": "29.9"
-       }
-      ]
-     ]
+     }
     },
     {
      "id": "H10bHy",
@@ -2983,41 +2919,6 @@ window.QUIZ_FUNNEL = {
      }
     },
     {
-     "id": "tGi8Ze",
-     "title": "Nível",
-     "type": "metric",
-     "design": {
-      "type": "default",
-      "color": "gradient"
-     },
-     "content": {
-      "title": null,
-      "name": "QTM6kv",
-      "subtitle": null,
-      "percent": "15",
-      "show_title": true,
-      "show_percent": false,
-      "show_dot": true,
-      "id": "lPaPVT",
-      "legends": "Saudável, Acima do peso, Obeso",
-      "tooltip": "Você: calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))"
-     },
-     "roles": [
-      [
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": ">",
-        "value": "18.4"
-       },
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": "<=",
-        "value": "24.9"
-       }
-      ]
-     ]
-    },
-    {
      "id": "BpVk2O",
      "title": "Nível",
      "type": "metric",
@@ -3036,51 +2937,7 @@ window.QUIZ_FUNNEL = {
       "id": "Vy55jy",
       "legends": "Saudável, Acima do peso, Obeso",
       "tooltip": "Você: calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))"
-     },
-     "roles": [
-      [
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": ">",
-        "value": "25"
-       },
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": "<=",
-        "value": "29.9"
-       }
-      ]
-     ]
-    },
-    {
-     "id": "qyVHvW",
-     "title": "Nível",
-     "type": "metric",
-     "design": {
-      "type": "default",
-      "color": "gradient"
-     },
-     "content": {
-      "title": null,
-      "name": "metric_hyjfbp",
-      "subtitle": null,
-      "percent": "90",
-      "show_title": true,
-      "show_percent": false,
-      "show_dot": true,
-      "id": "HyjFbp",
-      "legends": "Saudável, Acima do peso, Obeso",
-      "tooltip": "Você: calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))"
-     },
-     "roles": [
-      [
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": ">",
-        "value": "30"
-       }
-      ]
-     ]
+     }
     },
     {
      "id": "5Cxuh6",
@@ -3094,28 +2951,6 @@ window.QUIZ_FUNNEL = {
      }
     },
     {
-     "id": "QeysAK",
-     "title": "Alerta",
-     "type": "alert",
-     "design": {
-      "style": "success"
-     },
-     "content": {
-      "text": "<p><strong style=\"color: rgb(9, 9, 11);\">🚨Seu IMC é considerado obesidade</strong></p><p><span style=\"color: rgb(83, 98, 153); background-color: rgb(222, 243, 240);\">Você deve prestar mais atenção ao seu peso. Usaremos seu índice para definir com mais detalhes o desafio</span></p>",
-      "id": "QmTffT",
-      "name": "oOTUhv"
-     },
-     "roles": [
-      [
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": ">",
-        "value": "30"
-       }
-      ]
-     ]
-    },
-    {
      "id": "Ei15xh",
      "title": "Alerta",
      "type": "alert",
@@ -3126,48 +2961,7 @@ window.QUIZ_FUNNEL = {
       "text": "<p><strong style=\"color: rgb(9, 9, 11);\">🚨Seu IMC é considerado sobrepeso</strong></p><p><span style=\"background-color: rgb(222, 243, 240); color: rgb(83, 98, 153);\">Você deve prestar mais atenção ao seu peso. Usaremos seu índice para definir com mais detalhes o desafio</span></p>",
       "id": "mmpqDJ",
       "name": "bT0rw2"
-     },
-     "roles": [
-      [
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": ">",
-        "value": "25"
-       },
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": "<=",
-        "value": "29.9"
-       }
-      ]
-     ]
-    },
-    {
-     "id": "syaxEi",
-     "title": "Alerta",
-     "type": "alert",
-     "design": {
-      "style": "success"
-     },
-     "content": {
-      "text": "<p><strong style=\"color: rgb(9, 9, 11);\">✅ Bom IMC para começar a entrar em forma</strong></p><p><span style=\"background-color: rgb(222, 243, 240); color: rgb(83, 98, 153);\">Você está fazendo um bom trabalho mantendo o seu peso na faixa saudável. Usaremos o seu índice para adaptar o desafio às suas necessidades</span></p>",
-      "id": "a5MnuL",
-      "name": "DLUb6H"
-     },
-     "roles": [
-      [
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": ">",
-        "value": "18.4"
-       },
-       {
-        "variable": "calc({{peso}}/(({{altura}}/100)*({{altura}}/100)))",
-        "compare": "<=",
-        "value": "24.9"
-       }
-      ]
-     ]
+     }
     },
     {
      "id": "7lGbkB",
