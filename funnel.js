@@ -3127,22 +3127,48 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h2 class=\"ql-align-center\">Por que calistenia depois dos 30? 😍</h2><p class=\"ql-align-center\">Fortalece músculos e articulações, melhora a postura e acelera o metabolismo, usando só o peso do seu corpo.</p>",
+      "text": "<h2 class=\"ql-align-center\">Mulheres 30+ que transformaram o corpo treinando em casa 😍</h2><p class=\"ql-align-center\">Veja o antes e depois de quem já fez o desafio de 21 dias</p>",
       "id": "YEtXHQ",
       "name": "BntteR"
      }
     },
     {
-     "id": "mec037",
-     "type": "image",
-     "design": [],
+     "id": "res037",
+     "type": "carousel",
+     "design": {},
      "content": {
-      "image": {
-       "type": "image",
-       "src": "img/mecanismo.webp",
-       "width": 900,
-       "height": 563
-      }
+      "centered": true,
+      "spoiler": true,
+      "pagination": true,
+      "autoplay": true,
+      "delay": "2",
+      "layout": "image",
+      "items": [
+       {
+        "id": "res01",
+        "image": {
+         "type": "image",
+         "src": "img/res01.webp"
+        },
+        "text": null
+       },
+       {
+        "id": "res02",
+        "image": {
+         "type": "image",
+         "src": "img/res02.webp"
+        },
+        "text": null
+       },
+       {
+        "id": "res03",
+        "image": {
+         "type": "image",
+         "src": "img/res03.webp"
+        },
+        "text": null
+       }
+      ]
      }
     }
    ],
