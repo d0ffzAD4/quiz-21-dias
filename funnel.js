@@ -1308,7 +1308,7 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": "img/MKfUZX.webp",
+       "src": "img/treino-casa.webp",
        "width": 900,
        "height": 1080
       },
@@ -1373,7 +1373,7 @@ window.QUIZ_FUNNEL = {
      "content": {
       "image": {
        "type": "image",
-       "src": "img/MKfUZX.webp",
+       "src": "img/treino-casa.webp",
        "width": 900,
        "height": 1080
       },
@@ -1442,7 +1442,7 @@ window.QUIZ_FUNNEL = {
       "id": "9XdBzy",
       "image": {
        "type": "image",
-       "src": "img/MKfUZX.webp",
+       "src": "img/treino-casa.webp",
        "width": 900,
        "height": 1080
       },
@@ -3148,7 +3148,9 @@ window.QUIZ_FUNNEL = {
         "id": "res01",
         "image": {
          "type": "image",
-         "src": "img/res01.webp"
+         "src": "img/res04.webp",
+         "width": 600,
+         "height": 749
         },
         "text": null
        },
@@ -3156,7 +3158,9 @@ window.QUIZ_FUNNEL = {
         "id": "res02",
         "image": {
          "type": "image",
-         "src": "img/res02.webp"
+         "src": "img/res05.webp",
+         "width": 600,
+         "height": 1046
         },
         "text": null
        },
@@ -3164,7 +3168,9 @@ window.QUIZ_FUNNEL = {
         "id": "res03",
         "image": {
          "type": "image",
-         "src": "img/res03.webp"
+         "src": "img/res03.webp",
+         "width": 447,
+         "height": 447
         },
         "text": null
        }

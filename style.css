@@ -147,7 +147,7 @@ img{max-width:100%;height:auto;display:block}
 .rail::before,.rail::after{content:"";flex:0 0 calc(11% - 10px)}
 .rail::-webkit-scrollbar{display:none}
 .slide{flex:0 0 78%;scroll-snap-align:center;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
-.slide img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+.slide img{width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;background:#fff}
 .slide .ph{border:0;border-radius:0;aspect-ratio:587/640}
 .cap{padding:8px 10px;font-size:.9rem}
 .dots{display:flex;justify-content:center;gap:6px;margin-top:10px}
@@ -209,12 +209,16 @@ img{max-width:100%;height:auto;display:block}
   .logo img{width:5.6rem}
   .c-text h1{font-size:1.3rem}
 }
-@media (max-width:600px) and (max-height:720px){
-  .slide{flex-basis:64%}
-  .rail::before,.rail::after{flex-basis:calc(18% - 10px)}
+@media (max-width:600px) and (max-height:790px){
+  .slide{flex-basis:62%}
+  .rail::before,.rail::after{flex-basis:calc(19% - 10px)}
+}
+@media (max-width:600px) and (max-height:700px){
+  .slide{flex-basis:54%}
+  .rail::before,.rail::after{flex-basis:calc(23% - 10px)}
 }
 @media (max-width:600px) and (max-height:600px){
-  .slide{flex-basis:52%}
-  .rail::before,.rail::after{flex-basis:calc(24% - 10px)}
+  .slide{flex-basis:44%}
+  .rail::before,.rail::after{flex-basis:calc(28% - 10px)}
   .l-pct{font-size:2rem;margin-bottom:6px}
 }
