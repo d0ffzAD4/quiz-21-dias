@@ -8,7 +8,7 @@ window.QUIZ_CONFIG = {
   checkout: '',                      // link do checkout (Hotmart, Kiwify...). UTMs da página são repassadas.
   preco: 'R$ 37,90',
   preco_de: 'R$ 197,00',
-  parcelas: '',                      // ex.: 'OU 6x R$ X,XX' com o valor exato do seu checkout; vazio = não mostra
+  parcelas: 'OU 6x de R$ 7,11',      // valor exato da parcela no checkout; vazio = não mostra
   acesso: 'ACESSO POR UM ANO INTEIRO',
 
   cnpj: '',                          // preenchido = aparece no rodapé da primeira tela
