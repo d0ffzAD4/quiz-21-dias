@@ -3373,6 +3373,36 @@ window.QUIZ_FUNNEL = {
          "height": 600
         },
         "text": null
+       },
+       {
+        "id": "ad1",
+        "image": {
+         "type": "image",
+         "src": "img/ad1.webp",
+         "width": 720,
+         "height": 1080
+        },
+        "text": null
+       },
+       {
+        "id": "ad2",
+        "image": {
+         "type": "image",
+         "src": "img/ad2.webp",
+         "width": 720,
+         "height": 720
+        },
+        "text": null
+       },
+       {
+        "id": "ad3",
+        "image": {
+         "type": "image",
+         "src": "img/ad3.webp",
+         "width": 720,
+         "height": 1080
+        },
+        "text": null
        }
       ]
      }
