@@ -2698,7 +2698,7 @@ window.QUIZ_FUNNEL = {
       "style": "success"
      },
      "content": {
-      "text": "<p><strong style=\"color: rgb(9, 9, 11);\">🚨Seu IMC é considerado sobrepeso</strong></p><p><span style=\"color: rgb(83, 98, 153); background-color: rgb(222, 243, 240);\">Você deve prestar mais atenção ao seu peso. Usaremos seu índice para definir com mais detalhes o desafio</span></p>",
+      "text": "<p><strong style=\"color: rgb(9, 9, 11);\">🟢Estamos calculando seu IMC</strong></p><p><span style=\"color: rgb(83, 98, 153); background-color: rgb(222, 243, 240);\">Você deve colocar exatamente as respostas certas. Usaremos seu índice para definir com mais detalhes o desafio</span></p>",
       "id": "kcwnqX",
       "name": "YW1i8v"
      }
