@@ -178,7 +178,7 @@
     try {
       var u = new URL(url, location.href);
       new URLSearchParams(location.search).forEach(function (v, k) {
-        if (!u.searchParams.has(k)) u.searchParams.set(k, v);
+        if (k !== 'etapa' && !u.searchParams.has(k)) u.searchParams.set(k, v);
       });
       return u.toString();
     } catch (e) { return url; }

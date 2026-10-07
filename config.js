@@ -5,10 +5,10 @@ window.QUIZ_CONFIG = {
   logo: 'img/logo.webp',             // URL da logo; vazio = nome da oferta em texto
   corTema: '#f97316',                // cor principal (laranja da logo)
 
-  checkout: '',                      // link do checkout (Hotmart, Kiwify...). UTMs da página são repassadas.
-  preco: 'R$ 37,90',
+  checkout: 'https://go.perfectpay.com.br/PPU38CQGO4U', // PerfectPay; UTMs da página são repassadas
+  preco: 'R$ 27,90',
   preco_de: 'R$ 197,00',
-  parcelas: 'OU 6x de R$ 7,11',      // valor exato da parcela no checkout; vazio = não mostra
+  parcelas: 'OU EM ATÉ 5x NO CARTÃO',  // checkout aceita até 5x; troque pelo valor exato da parcela se quiser (ex.: 'OU 5x DE R$ X,XX')
   acesso: 'ACESSO POR UM ANO INTEIRO',
 
   cnpj: '',                          // preenchido = aparece no rodapé da primeira tela
