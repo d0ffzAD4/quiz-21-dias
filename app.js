@@ -572,6 +572,17 @@
       it.appendChild(tx);
       d.appendChild(it);
     });
+    // soma dos valores riscados (só aparece se todos os bônus tiverem valor)
+    var total = 0, all = list.every(function (b) {
+      var n = parseFloat(String(b.valor || '').replace(/[^\d,]/g, '').replace(',', '.'));
+      if (isNaN(n)) return false;
+      total += n;
+      return true;
+    });
+    if (all && total > 0) {
+      var fmt = 'R$ ' + total.toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+      d.appendChild(h('div', 'b-total', 'Total em bônus: <s>' + fmt + '</s><b>Hoje: GRÁTIS</b>'));
+    }
     return d;
   };
 

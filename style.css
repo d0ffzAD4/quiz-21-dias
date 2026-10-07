@@ -236,3 +236,6 @@ img{max-width:100%;height:auto;display:block}
 .b-d{font-size:.86rem;line-height:1.35;color:var(--content)}
 .b-tag{display:inline-block;margin-top:6px;font-size:.75rem;font-weight:800;color:#15803d;background:#dcfce7;border-radius:6px;padding:2px 8px}
 .b-tag s{color:#9ca3af;font-weight:600;margin-right:2px}
+.b-total{margin-top:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 10px;background:var(--title);color:#fff;border-radius:12px;padding:12px;font-weight:700;font-size:.95rem;text-align:center}
+.b-total s{color:#9ca3af;font-weight:600}
+.b-total b{color:#4ade80;font-weight:800;font-size:1.05rem}
