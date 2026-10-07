@@ -15,7 +15,7 @@ window.QUIZ_CONFIG = {
   bonus: [
     { emoji: '🥗', titulo: 'Plano Antiflacidez com receitas', texto: 'Receitas simples para acompanhar o desafio e deixar o corpo mais firme.', valor: '' },
     { emoji: '🧘‍♀️', titulo: 'Rotina de mobilidade e alongamento', texto: 'Exercícios para proteger joelhos e coluna e reduzir as dores do dia a dia.', valor: '' },
-    { emoji: '⚡', titulo: 'Treinos Express de 10 minutos', texto: 'Para os dias corridos: circuitos curtos de calistenia para não perder o ritmo do desafio.', valor: '' },
+    { emoji: '🍑', titulo: 'Protocolo Bumbum Durinho em Casa', texto: 'Sequência focada em levantar e firmar o bumbum e as pernas, só com o peso do corpo e em poucos minutos por dia.', valor: '' },
   ],
 
   cnpj: '',                          // preenchido = aparece no rodapé da primeira tela
