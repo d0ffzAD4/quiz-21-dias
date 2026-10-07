@@ -579,8 +579,8 @@
       total += n;
       return true;
     });
-    if (all && total > 0) {
-      var fmt = 'R$ ' + total.toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    if (CFG.bonusTotal || (all && total > 0)) {
+      var fmt = CFG.bonusTotal || 'R$ ' + total.toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
       d.appendChild(h('div', 'b-total', 'Total em bônus: <s>' + fmt + '</s><b>Hoje: GRÁTIS</b>'));
     }
     return d;

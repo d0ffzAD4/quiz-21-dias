@@ -18,6 +18,8 @@ window.QUIZ_CONFIG = {
     { emoji: '🍑', titulo: 'Protocolo Bumbum Durinho em Casa', texto: 'Sequência focada em levantar e firmar o bumbum e as pernas, só com o peso do corpo e em poucos minutos por dia.', valor: 'R$ 67,90' },
   ],
 
+  bonusTotal: 'R$ 159,90',            // total exibido; vazio = soma dos valores acima
+
   cnpj: '',                          // preenchido = aparece no rodapé da primeira tela
 
   gtm: '',                           // ID do Google Tag Manager (ex.: GTM-XXXXXXX); opcional
