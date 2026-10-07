@@ -553,6 +553,28 @@
     return d;
   };
 
+  // destaque de bônus: a lista vem de CONFIG.bonus para ser editada sem mexer no funil
+  R.bonus = function (l) {
+    var list = CFG.bonus || [];
+    if (!list.length) return null;
+    var c = l.content || {};
+    var d = h('div', 'c-bonus');
+    d.appendChild(h('div', 'b-head', '🎁 ' + esc(interp(c.title || 'BÔNUS EXCLUSIVOS'))));
+    if (c.subtitle) d.appendChild(h('div', 'b-sub', interp(c.subtitle)));
+    list.forEach(function (b, i) {
+      var it = h('div', 'b-item');
+      it.appendChild(h('div', 'b-ico', esc(b.emoji || '🎁')));
+      var tx = h('div', 'b-txt');
+      tx.appendChild(h('div', 'b-n', 'BÔNUS ' + (i + 1)));
+      tx.appendChild(h('div', 'b-t', esc(b.titulo || '')));
+      if (b.texto) tx.appendChild(h('div', 'b-d', esc(b.texto)));
+      tx.appendChild(h('div', 'b-tag', (b.valor ? '<s>' + esc(b.valor) + '</s> ' : '') + 'GRÁTIS'));
+      it.appendChild(tx);
+      d.appendChild(it);
+    });
+    return d;
+  };
+
   R.video = function (l) {
     var c = l.content;
     var url = CFG.videos && CFG.videos[l.id];

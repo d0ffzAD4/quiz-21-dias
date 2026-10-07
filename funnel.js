@@ -3642,7 +3642,7 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<p class=\"ql-align-center\"><strong class=\"ql-size-small\" style=\"background-color: rgb(9, 9, 11); color: rgb(255, 255, 255);\">🎁 {{acesso}}</strong></p>",
+      "text": "<p class=\"ql-align-center\"><strong class=\"ql-size-small\" style=\"background-color: rgb(9, 9, 11); color: rgb(255, 255, 255);\">🎁 + BÔNUS EXCLUSIVOS INCLUSOS</strong></p>",
       "id": "N194Bt",
       "name": "7fJqqI"
      }
@@ -3680,9 +3680,34 @@ window.QUIZ_FUNNEL = {
      "type": "text",
      "design": [],
      "content": {
-      "text": "<h1 class=\"ql-align-center\"><strong>O que você recebe:</strong></h1><p>✅ Desafios de 21 dias de calistenia com treinos em vídeo, passo a passo;</p><p>✅ Treinos em casa, sem equipamento, só com o peso do corpo;</p><p>✅ Começa no nível iniciante e evolui a cada dia;</p><p>✅ Exercícios de mobilidade e alongamento para proteger joelhos e coluna;</p><p>✅ Plano ANTIFLACIDEZ com receitas para acompanhar o desafio;</p><p>✅ Treinos gravados para fazer no horário que quiser.</p>",
+      "text": "<h1 class=\"ql-align-center\"><strong>O que você recebe:</strong></h1><p>✅ Desafios de 21 dias de calistenia com treinos em vídeo, passo a passo;</p><p>✅ Treinos em casa, sem equipamento, só com o peso do corpo;</p><p>✅ Começa no nível iniciante e evolui a cada dia;</p><p>✅ Treinos gravados para fazer no horário que quiser.</p>",
       "id": "kjvzsL",
       "name": "5g1Yx0"
+     }
+    },
+    {
+     "id": "bonus42c",
+     "type": "clear",
+     "design": [],
+     "content": {
+      "clear": "h-[1.25rem]"
+     }
+    },
+    {
+     "id": "bonus42",
+     "type": "bonus",
+     "design": [],
+     "content": {
+      "title": "BÔNUS EXCLUSIVOS",
+      "subtitle": "Liberados junto com o seu desafio, <strong>sem pagar nada a mais</strong>"
+     }
+    },
+    {
+     "id": "bonus42d",
+     "type": "clear",
+     "design": [],
+     "content": {
+      "clear": "h-[0.5rem]"
      }
     },
     {

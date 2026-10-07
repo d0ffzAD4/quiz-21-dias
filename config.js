@@ -11,6 +11,13 @@ window.QUIZ_CONFIG = {
   parcelas: 'OU EM ATÉ 5x NO CARTÃO',  // checkout aceita até 5x; troque pelo valor exato da parcela se quiser (ex.: 'OU 5x DE R$ X,XX')
   acesso: 'ACESSO POR UM ANO INTEIRO',
 
+  // Bônus em destaque na página de venda. valor (opcional) aparece riscado: 'R$ 47,00'
+  bonus: [
+    { emoji: '🥗', titulo: 'Plano Antiflacidez com receitas', texto: 'Receitas simples para acompanhar o desafio e deixar o corpo mais firme.', valor: '' },
+    { emoji: '🧘‍♀️', titulo: 'Rotina de mobilidade e alongamento', texto: 'Exercícios para proteger joelhos e coluna e reduzir as dores do dia a dia.', valor: '' },
+    { emoji: '🔓', titulo: 'Acesso por 1 ano inteiro', texto: 'Refaça os desafios quantas vezes quiser, no seu ritmo.', valor: '' },
+  ],
+
   cnpj: '',                          // preenchido = aparece no rodapé da primeira tela
 
   gtm: '',                           // ID do Google Tag Manager (ex.: GTM-XXXXXXX); opcional
