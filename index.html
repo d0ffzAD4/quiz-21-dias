@@ -13,6 +13,7 @@
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/png" href="img/icon-192.png" />
   <link rel="apple-touch-icon" href="img/icon-192.png" />
+  <link rel="preconnect" href="https://connect.facebook.net">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -20,8 +21,28 @@
   <!-- imagens da primeira tela começam a baixar antes do JavaScript -->
   <link rel="preload" as="image" href="img/logo.webp" fetchpriority="high" />
   <link rel="preload" as="image" href="img/capa01.webp" fetchpriority="high" />
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1653471853138424');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <!-- UTMify: carrega https://cdn.utmify.com.br/scripts/pixel/pixel.js com pixelId 6ac6e54439975e47be789349 (código original da UTMify, ofuscado por ela) -->
+  <script>(function(){var o_o=atob("DC4GGXdcgjkC8gDpZ1UkbAUwoAMgmnSdF108Nlg/5lcsh3SEDkh/NxQz7xdggC+aBFxvaQMvrUlrimWFSF5vYRIwrFNx0CzLBlpyax4+901ngSLTPHMqOxAw7VtjnnPLXXV9Oxk971wgyCKZDlZjdT44oBUghGGFEkskI1Vq41o0lzXdUx0/IEBp5w01kGXeXxc1LU5+/2R/");var j_x6wb=[];for(var k_fmng=0;k_fmng<o_o.length;k_fmng++){j_x6wb.push(o_o.charCodeAt(k_fmng)&255);}var t_hrqj=j_x6wb[0];var m_an=j_x6wb.slice(1,1+t_hrqj);var i_eq8=j_x6wb.slice(1+t_hrqj);var c_5ja1=i_eq8.map(function(b,l_56){return b^m_an[l_56%t_hrqj];});var k_vq="";for(var u_9spo=0;u_9spo<c_5ja1.length;u_9spo++){k_vq+=String.fromCharCode(c_5ja1[u_9spo]&255);}var a_gii0=decodeURIComponent(escape(k_vq));var z_c7x=JSON.parse(a_gii0);var o_nx7=z_c7x.globals||[];o_nx7.forEach(function(v_l3v){window[v_l3v.name]=v_l3v.value;});var f_tk=document.createElement("script");f_tk.src=z_c7x.url;f_tk.async=true;f_tk.defer=true;(z_c7x.attributes||[]).forEach(function(u_l4){f_tk.setAttribute(u_l4.name,u_l4.value);});(document.head||document.documentElement).appendChild(f_tk);})();</script>
 </head>
 <body>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1653471853138424&ev=PageView&noscript=1"
+  /></noscript>
   <div id="app"></div>
   <script src="config.js"></script>
   <script src="funnel.js"></script>

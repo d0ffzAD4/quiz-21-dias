@@ -187,8 +187,15 @@
   function redirect(url) {
     var u = checkoutUrl(url);
     track('quiz_checkout', { answers: answers });
-    if (u) location.href = u;
-    else alert('Defina o link de checkout em quiz/config.js');
+    // Meta Pixel: o quiz não recarrega a página, então o clique de compra é avisado aqui
+    if (window.fbq) {
+      var v = parseFloat(String(CFG.preco || '').replace(/[^\d,]/g, '').replace(',', '.'));
+      window.fbq('track', 'InitiateCheckout', isNaN(v) ? {} : { value: v, currency: 'BRL' });
+    }
+    if (!u) return alert('Defina o link de checkout em config.js');
+    // pequena folga para o evento do pixel sair antes da troca de página
+    if (window.fbq) setTimeout(function () { location.href = u; }, 300);
+    else location.href = u;
   }
 
   /* ---------- validação e navegação ---------- */
