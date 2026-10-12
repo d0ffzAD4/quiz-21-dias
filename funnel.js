@@ -3711,6 +3711,40 @@ window.QUIZ_FUNNEL = {
      }
     },
     {
+     "id": "dep42c",
+     "type": "clear",
+     "design": [],
+     "content": {
+      "clear": "h-[1.5rem]"
+     }
+    },
+    {
+     "id": "dep42t",
+     "type": "text",
+     "design": [],
+     "content": {
+      "text": "<h2 class=\"ql-align-center\">Ela redescobriu a saúde e a felicidade depois dos 40 anos 💛</h2><p class=\"ql-align-center\">Dê o play e ouça a experiência dela</p>"
+     }
+    },
+    {
+     "id": "dep42v",
+     "type": "video",
+     "design": [],
+     "content": {
+      "url": "https://www.youtube.com/embed/pRg-Kzji1VY?rel=0&playsinline=1",
+      "vertical": true,
+      "title": "Depoimento da Mônica"
+     }
+    },
+    {
+     "id": "dep42d",
+     "type": "clear",
+     "design": [],
+     "content": {
+      "clear": "h-[1rem]"
+     }
+    },
+    {
      "id": "Br5C6k",
      "title": "Botão",
      "type": "button",

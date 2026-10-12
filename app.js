@@ -595,11 +595,14 @@
 
   R.video = function (l) {
     var c = l.content;
-    var url = CFG.videos && CFG.videos[l.id];
-    var d = h('div', 'c-video');
+    var url = (CFG.videos && CFG.videos[l.id]) || c.url;
+    var d = h('div', 'c-video' + (c.vertical ? ' vertical' : ''));
     if (url) {
       var f = h('iframe');
-      f.src = url; f.allow = 'autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen = true;
+      f.allow = 'autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen = true;
+      f.loading = 'lazy'; // só baixa o player quando a pessoa chega perto do vídeo
+      f.title = c.title || 'Vídeo';
+      f.src = url;
       d.appendChild(f);
     } else if (c.video) {
       d.innerHTML = c.video;
