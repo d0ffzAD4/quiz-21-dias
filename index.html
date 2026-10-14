@@ -32,6 +32,8 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
+  // sem eventos automáticos do Meta (clique em botão): o IC sai só do botão de compra, com id, uma vez
+  fbq('set', 'autoConfig', false, '1653471853138424');
   fbq('init', '1653471853138424');
   // mesmo id que o Rastreio usa no PageView pelo servidor (API de Conversões): o Meta junta os dois
   window.rvPageViewId = 'rv.pv.' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
