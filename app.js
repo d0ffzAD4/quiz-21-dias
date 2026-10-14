@@ -303,6 +303,31 @@
     return inp;
   };
 
+  // Resposta escolhida: evento "RespostaQuiz" no Meta Pixel (no lugar do clique automático, que podia virar um
+  // segundo IC) e no Rastreio (nome fora da lista do Meta, então não é reenviado pelo servidor).
+  // Pergunta = primeira linha do texto logo acima das opções (ou o nome da etapa).
+  function questionOf(l) {
+    var step = steps[current] || {};
+    var layers = step.layers || [];
+    for (var i = layers.indexOf(l) - 1; i >= 0; i--) {
+      if (layers[i].type !== 'text') continue;
+      var tmp = h('div', null, interp((layers[i].content || {}).text || ''));
+      var first = (tmp.querySelector('h1,h2,h3,h4,p,div') || tmp).textContent.trim();
+      if (first) return first.slice(0, 100);
+    }
+    return step.title && step.title.indexOf('{{') < 0 ? step.title : 'etapa ' + (current + 1);
+  }
+
+  function answerEvent(l, label) {
+    var data = {
+      etapa: current + 1,
+      pergunta: questionOf(l),
+      resposta: String(label || '').slice(0, 100),
+    };
+    if (window.fbq) window.fbq('trackCustom', 'RespostaQuiz', data);
+    rastreio('track', 'resposta_quiz', data);
+  }
+
   R.options = function (l) {
     var c = l.content, d = l.design || {};
     var multi = !!c.multiple;
@@ -351,12 +376,13 @@
       b.addEventListener('click', function () {
         if (multi) {
           var k = sel.indexOf(o.id);
-          if (k >= 0) sel.splice(k, 1); else sel.push(o.id);
+          if (k >= 0) sel.splice(k, 1); else { sel.push(o.id); answerEvent(l, label.textContent.trim()); }
           b.classList.toggle('on', k < 0);
           save(); refreshState();
           return;
         }
         sel.length = 0; sel.push(o.id);
+        answerEvent(l, label.textContent.trim());
         wrap.querySelectorAll('.opt').forEach(function (x) { x.classList.remove('on'); });
         b.classList.add('on');
         save(); refreshState();
