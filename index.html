@@ -22,11 +22,31 @@
   <!-- imagens da primeira tela começam a baixar antes do JavaScript -->
   <link rel="preload" as="image" href="img/logo.webp" fetchpriority="high" />
   <link rel="preload" as="image" href="img/capa01.webp" fetchpriority="high" />
-  <!-- Rastreio: guarda UTMs, carrega o Meta Pixel (quiz 21) cadastrado no painel e manda PageView,
-       etapas do quiz e InitiateCheckout pelo navegador e pelo servidor (API de Conversões) -->
-  <script src="https://rastreio-liart.vercel.app/t.js?v=3" data-project="97bd770823ec493f40e7976f" async></script>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1653471853138424');
+  // mesmo id que o Rastreio usa no PageView pelo servidor (API de Conversões): o Meta junta os dois
+  window.rvPageViewId = 'rv.pv.' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+  fbq('track', 'PageView', {}, { eventID: window.rvPageViewId });
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Rastreio (no lugar da UTMify): guarda UTMs e leva a origem ao checkout; manda PageView, etapas do quiz e
+       InitiateCheckout também pelo servidor (API de Conversões), com o mesmo id do pixel acima -->
+  <script src="https://rastreio-liart.vercel.app/t.js?v=4" data-project="97bd770823ec493f40e7976f" async></script>
 </head>
 <body>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1653471853138424&ev=PageView&noscript=1"
+  /></noscript>
   <div id="app"></div>
   <script src="config.js"></script>
   <script src="funnel.js"></script>

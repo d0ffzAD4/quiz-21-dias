@@ -197,12 +197,14 @@
     if (!u) return alert('Defina o link de checkout em config.js');
     // Rastreio: leva UTMs + id do visitante (src/sck) para a PerfectPay e dispara o InitiateCheckout
     // (pixel e API de Conversões com o mesmo id). O quiz não recarrega a página, então é avisado aqui.
-    if (window.rastreio && window.rastreio.ready) {
-      var v = parseFloat(String(CFG.preco || '').replace(/[^\d,]/g, '').replace(',', '.'));
-      u = window.rastreio.checkout(u, isNaN(v) ? {} : { value: v, currency: 'BRL' });
-      // pequena folga para o evento do pixel sair antes da troca de página
-      setTimeout(function () { location.href = u; }, 300);
-    } else location.href = u;
+    var v = parseFloat(String(CFG.preco || '').replace(/[^\d,]/g, '').replace(',', '.'));
+    var ic = isNaN(v) ? {} : { value: v, currency: 'BRL' };
+    if (window.rastreio && window.rastreio.ready) u = window.rastreio.checkout(u, ic);
+    // Rastreio ainda não carregou: o Meta Pixel da página avisa o InitiateCheckout sozinho
+    else if (window.fbq) window.fbq('track', 'InitiateCheckout', ic);
+    // pequena folga para o evento do pixel sair antes da troca de página
+    if (window.fbq) setTimeout(function () { location.href = u; }, 300);
+    else location.href = u;
   }
 
   /* ---------- validação e navegação ---------- */
