@@ -171,6 +171,13 @@
     window.dataLayer.push(Object.assign({ event: event }, data || {}));
   }
 
+  // Rastreio (t.js carrega async): chama direto se já carregou; senão entra na fila que ele processa ao carregar.
+  function rastreio() {
+    var args = [].slice.call(arguments);
+    if (window.rastreio && window.rastreio.ready) return window.rastreio[args[0]].apply(window.rastreio, args.slice(1));
+    (window.rastreio = window.rastreio || []).push(args);
+  }
+
   function checkoutUrl(url) {
     url = interp(url, true);
     if (!url || url === '#') return null;
@@ -187,15 +194,15 @@
   function redirect(url) {
     var u = checkoutUrl(url);
     track('quiz_checkout', { answers: answers });
-    // Meta Pixel: o quiz não recarrega a página, então o clique de compra é avisado aqui
-    if (window.fbq) {
-      var v = parseFloat(String(CFG.preco || '').replace(/[^\d,]/g, '').replace(',', '.'));
-      window.fbq('track', 'InitiateCheckout', isNaN(v) ? {} : { value: v, currency: 'BRL' });
-    }
     if (!u) return alert('Defina o link de checkout em config.js');
-    // pequena folga para o evento do pixel sair antes da troca de página
-    if (window.fbq) setTimeout(function () { location.href = u; }, 300);
-    else location.href = u;
+    // Rastreio: leva UTMs + id do visitante (src/sck) para a PerfectPay e dispara o InitiateCheckout
+    // (pixel e API de Conversões com o mesmo id). O quiz não recarrega a página, então é avisado aqui.
+    if (window.rastreio && window.rastreio.ready) {
+      var v = parseFloat(String(CFG.preco || '').replace(/[^\d,]/g, '').replace(',', '.'));
+      u = window.rastreio.checkout(u, isNaN(v) ? {} : { value: v, currency: 'BRL' });
+      // pequena folga para o evento do pixel sair antes da troca de página
+      setTimeout(function () { location.href = u; }, 300);
+    } else location.href = u;
   }
 
   /* ---------- validação e navegação ---------- */
@@ -688,6 +695,8 @@
     refreshState();
     window.scrollTo(0, 0);
     track('quiz_step', { step_index: idx, step_id: step.id, step_title: step.title });
+    // Funil do Rastreio: uma etapa por tela
+    rastreio('step', idx, step.title && step.title.indexOf('{{') < 0 ? step.title : 'etapa ' + (idx + 1));
     // depois que a etapa atual pintou, aquece as próximas
     (window.requestIdleCallback || setTimeout)(function () { warm(idx); });
   }
