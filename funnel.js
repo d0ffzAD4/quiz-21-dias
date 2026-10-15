@@ -3502,8 +3502,8 @@ window.QUIZ_FUNNEL = {
       "pulse": false,
       "target": false,
       "id": "ISBnyD",
-      "anchor": "BzoEIX",
-      "highlight": "wE7r1E"
+      "anchor": "zcX7Ps",
+      "highlight": "ipV4FO"
      }
     },
     {
@@ -3587,65 +3587,6 @@ window.QUIZ_FUNNEL = {
       "text": "<h1 class=\"ql-align-center\"><strong>{{nome}}, o seu desafio de 21 dias da </strong><strong style=\"color: rgb(249, 115, 22);\">{{produto}}</strong><strong> está pronto!</strong></h1>",
       "id": "ZQ32vu",
       "name": "0Vwzcf"
-     }
-    },
-    {
-     "id": "BzoEIX",
-     "title": "Preço",
-     "type": "price",
-     "design": {
-      "style": "theme"
-     },
-     "content": {
-      "title": "<p><strong>{{produto}}</strong></p><p>Desafios de 21 dias</p>",
-      "value": "{{preco}}",
-      "before": "de <s>{{preco_de}}</s> por",
-      "after": "{{parcelas}}",
-      "redirect": true,
-      "id": "QSTf4g",
-      "name": "zObuSM",
-      "featured": "CONDIÇÃO ESPECIAL 🎁",
-      "type": null
-     }
-    },
-    {
-     "id": "n8Xs8r",
-     "title": "Texto",
-     "type": "text",
-     "design": [],
-     "content": {
-      "text": "<p class=\"ql-align-center\"><strong class=\"ql-size-small\" style=\"color: rgb(107, 114, 128); background-color: inherit;\">Não é assinatura, você paga somente uma única vez</strong></p>",
-      "id": "1yNKSL",
-      "name": "u5m6dR"
-     }
-    },
-    {
-     "id": "wE7r1E",
-     "title": "Botão",
-     "type": "button",
-     "design": {
-      "style": "theme",
-      "pulse": true
-     },
-     "content": {
-      "name": "VDegTm",
-      "type": "redirect",
-      "label": "👉 RECEBER MEU DESAFIO 21D",
-      "destination": "{{checkout}}",
-      "pulse": false,
-      "target": false,
-      "id": "gLaueZ"
-     }
-    },
-    {
-     "id": "OYBbcw",
-     "title": "Texto",
-     "type": "text",
-     "design": [],
-     "content": {
-      "text": "<p class=\"ql-align-center\"><strong class=\"ql-size-small\" style=\"background-color: rgb(9, 9, 11); color: rgb(255, 255, 255);\">🎁 + BÔNUS EXCLUSIVOS INCLUSOS</strong></p>",
-      "id": "N194Bt",
-      "name": "7fJqqI"
      }
     },
     {
@@ -3760,8 +3701,8 @@ window.QUIZ_FUNNEL = {
       "pulse": false,
       "target": false,
       "id": "atVf8x",
-      "anchor": "BzoEIX",
-      "highlight": "wE7r1E"
+      "anchor": "zcX7Ps",
+      "highlight": "ipV4FO"
      }
     },
     {
@@ -3838,6 +3779,17 @@ window.QUIZ_FUNNEL = {
      }
     },
     {
+     "id": "n8Xs8r",
+     "title": "Texto",
+     "type": "text",
+     "design": [],
+     "content": {
+      "text": "<p class=\"ql-align-center\"><strong class=\"ql-size-small\" style=\"color: rgb(107, 114, 128); background-color: inherit;\">Não é assinatura, você paga somente uma única vez</strong></p>",
+      "id": "1yNKSL",
+      "name": "u5m6dR"
+     }
+    },
+    {
      "id": "ipV4FO",
      "title": "Botão",
      "type": "button",
@@ -3847,13 +3799,12 @@ window.QUIZ_FUNNEL = {
      },
      "content": {
       "name": "mVG0cv",
-      "type": "anchor",
+      "type": "redirect",
       "label": "QUERO ELIMINAR A BARRIGA",
       "pulse": false,
       "target": false,
       "id": "TqZj3p",
-      "anchor": "BzoEIX",
-      "highlight": "wE7r1E"
+      "destination": "{{checkout}}"
      }
     },
     {
@@ -3906,8 +3857,8 @@ window.QUIZ_FUNNEL = {
       "pulse": false,
       "target": false,
       "id": "gFo8pU",
-      "anchor": "BzoEIX",
-      "highlight": "wE7r1E"
+      "anchor": "zcX7Ps",
+      "highlight": "ipV4FO"
      }
     },
     {

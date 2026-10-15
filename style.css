@@ -245,4 +245,4 @@ img{max-width:100%;height:auto;display:block}
 /* âncora: destaque do botão principal ao chegar nele */
 .btn.flash{animation:flash 1.4s ease}
 @keyframes flash{0%,100%{transform:none;box-shadow:0 0 0 0 transparent}15%,45%{transform:scale(1.04);box-shadow:0 0 0 6px color-mix(in srgb,var(--theme) 35%,transparent)}30%,60%{transform:scale(1)}}
-[data-id="BzoEIX"]{scroll-margin-top:16px}
+[data-id="zcX7Ps"]{scroll-margin-top:16px}
