@@ -3800,7 +3800,7 @@ window.QUIZ_FUNNEL = {
      "content": {
       "name": "mVG0cv",
       "type": "redirect",
-      "label": "QUERO ELIMINAR A BARRIGA",
+      "label": "QUERO COMEÇAR AGORA!",
       "pulse": false,
       "target": false,
       "id": "TqZj3p",
