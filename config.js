@@ -8,7 +8,7 @@ window.QUIZ_CONFIG = {
   checkout: 'https://go.perfectpay.com.br/PPU38CQGO4U', // PerfectPay; UTMs da página são repassadas
   preco: 'R$ 27,90',
   preco_de: 'R$ 197,00',
-  parcelas: 'OU EM ATÉ 5x NO CARTÃO',  // checkout aceita até 5x; troque pelo valor exato da parcela se quiser (ex.: 'OU 5x DE R$ X,XX')
+  parcelas: 'OU 5x DE R$ 6,09',       // valor da parcela no checkout; vazio = não mostra
   acesso: 'ACESSO POR UM ANO INTEIRO',
 
   // Bônus em destaque na página de venda. valor (opcional) aparece riscado: 'R$ 47,00'
