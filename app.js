@@ -274,7 +274,21 @@
     var c = l.content, d = l.design || {};
     var b = h('button', 'btn' + (d.pulse ? ' pulse' : ''), esc(interp(c.label)));
     b.type = 'button';
-    if (c.type === 'redirect') {
+    if (c.type === 'anchor') {
+      // âncora: rola até o bloco de preço e destaca o botão principal (só ele vai ao checkout)
+      b.addEventListener('click', function () {
+        var alvo = app.querySelector('[data-id="' + c.anchor + '"]');
+        var principal = app.querySelector('[data-id="' + (c.highlight || c.anchor) + '"] .btn');
+        if (!alvo) return;
+        alvo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (principal) {
+          principal.classList.remove('flash');
+          void principal.offsetWidth; // reinicia a animação se clicar de novo
+          principal.classList.add('flash');
+        }
+        track('quiz_anchor', { from: l.id, to: c.anchor });
+      });
+    } else if (c.type === 'redirect') {
       b.addEventListener('click', function () { redirect(c.destination); });
     } else {
       b.setAttribute('data-next', '');
@@ -283,7 +297,7 @@
         go(nav[c.id] || c.destination);
       });
     }
-    if (d.fixed || c.type !== 'redirect') { var w = h('div', 'fixed-bar'); w.appendChild(b); return w; }
+    if (d.fixed || (c.type !== 'redirect' && c.type !== 'anchor')) { var w = h('div', 'fixed-bar'); w.appendChild(b); return w; }
     return b;
   };
 

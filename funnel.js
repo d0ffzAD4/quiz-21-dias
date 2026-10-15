@@ -3497,12 +3497,13 @@ window.QUIZ_FUNNEL = {
      },
      "content": {
       "name": "ZmuR3I",
-      "type": "redirect",
+      "type": "anchor",
       "label": "👉 QUERO RECEBER MEU DESAFIO",
-      "destination": "{{checkout}}",
       "pulse": false,
       "target": false,
-      "id": "ISBnyD"
+      "id": "ISBnyD",
+      "anchor": "BzoEIX",
+      "highlight": "wE7r1E"
      }
     },
     {
@@ -3754,12 +3755,13 @@ window.QUIZ_FUNNEL = {
      },
      "content": {
       "name": "aAckJs",
-      "type": "redirect",
+      "type": "anchor",
       "label": "QUERO ELIMINAR A FLACIDEZ",
-      "destination": "{{checkout}}",
       "pulse": false,
       "target": false,
-      "id": "atVf8x"
+      "id": "atVf8x",
+      "anchor": "BzoEIX",
+      "highlight": "wE7r1E"
      }
     },
     {
@@ -3845,12 +3847,13 @@ window.QUIZ_FUNNEL = {
      },
      "content": {
       "name": "mVG0cv",
-      "type": "redirect",
+      "type": "anchor",
       "label": "QUERO ELIMINAR A BARRIGA",
-      "destination": "{{checkout}}",
       "pulse": false,
       "target": false,
-      "id": "TqZj3p"
+      "id": "TqZj3p",
+      "anchor": "BzoEIX",
+      "highlight": "wE7r1E"
      }
     },
     {
@@ -3898,12 +3901,13 @@ window.QUIZ_FUNNEL = {
      },
      "content": {
       "name": "tklbHc",
-      "type": "redirect",
+      "type": "anchor",
       "label": "QUERO COMEÇAR AGORA!",
-      "destination": "{{checkout}}",
       "pulse": false,
       "target": false,
-      "id": "gFo8pU"
+      "id": "gFo8pU",
+      "anchor": "BzoEIX",
+      "highlight": "wE7r1E"
      }
     },
     {
