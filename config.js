@@ -5,7 +5,7 @@ window.QUIZ_CONFIG = {
   logo: 'img/logo.webp',             // URL da logo; vazio = nome da oferta em texto
   corTema: '#f97316',                // cor principal (laranja da logo)
 
-  checkout: 'https://go.perfectpay.com.br/PPU38CQGO4T', // PerfectPay; UTMs da página são repassadas
+  checkout: 'https://go.perfectpay.com.br/PPU38CQGO4U', // PerfectPay; UTMs da página são repassadas
   preco: 'R$ 27,90',
   preco_de: 'R$ 197,00',
   parcelas: 'OU 5x DE R$ 6,09',       // valor da parcela no checkout; vazio = não mostra
